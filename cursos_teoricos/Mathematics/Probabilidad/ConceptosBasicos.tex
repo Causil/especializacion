@@ -70,6 +70,22 @@ Un espacio de probabilidad $(\Omega, \lm,P)$ con $\Omega$ finito, $\lm = \mcp(\O
     \end{enumerate}
 \end{theorem}
 
+\begin{theorem}{\bf (Teorema de la probabilidad total)}
+    Sea $A_1, A_2, A_3, A_4, \ldots,$ particiones finitas o countables de $\Omega$, esto es, $A_i\cap A_j=\emptyset$ para todo  $i \not= j$
+    y  $\bigcup_{i=1}^{\infty} A_i = \Omega$; tal que $P(A_i)> 0 $ para todo $A_i \in \mathfrak{J}$. Entonces, para cada $B\in \mathfrak{J}$:
+    \begin{align}
+        P(B) = \sum_{i} P(B|A_i)P(A_i)
+    \end{align}
+\end{theorem} 
+
+\begin{corollary}{\bf (Regla de Bayes)}
+    Sean $A_1,A_2, \ldots$ un partici\'on finita o contable de $\Omega$ con $P(A_i)>0$ para todo $i$; entonces, para cada $B\in \mathfrak{J}$ con $P(B)>0$:
+    \begin{align}
+        P(A_i | B) = \frac{P(A_i)P(B|A_i)}{\sum_j P(B|A_j)P(A_j)} \quad\text{ para todo $i$. }
+    \end{align}
+\end{corollary}
+
+
 \begin{definition}{\bf (Distribuciones A priori y A Posteriori)}\newline
     Sea $A_1, A_2, \cdots$ una partici\'on finita o contable de $\Omega$ con $P(A_i)>0$ para todo $i$. Si $B$ 
     es un elemento de $\lm$ con $P(B)>0$, entonces $(P(A_n))_{n}$ es llamada la distribuci\'on ``a priori'', esto es, antes de que suceda $B$, 
@@ -101,20 +117,12 @@ Un espacio de probabilidad $(\Omega, \lm,P)$ con $\Omega$ finito, $\lm = \mcp(\O
     Independencia de pares no implica independencia de familia o eventos mutuamente independientes.
 \end{definition}
 
-\begin{theorem}{\bf (Teorema de la probabilidad total)}
-    Sea $A_1, A_2, A_3, A_4, \ldots,$ particiones finitas o countables de $\Omega$, esto es, $A_i\cap A_j=\emptyset$ para todo  $i \not= j$
-    y  $\bigcup_{i=1}^{\infty} A_i = \Omega$; tal que $P(A_i)> 0 $ para todo $A_i \in \mathfrak{J}$. Entonces, para cada $B\in \mathfrak{J}$:
-    \begin{align}
-        P(B) = \sum_{i} P(B|A_i)P(A_i)
-    \end{align}
-\end{theorem} 
-
-\begin{corollary}{\bf (Regla de Bayes)}
-    Sean $A_1,A_2, \ldots$ un partici\'on finita o contable de $\Omega$ con $P(A_i)>0$ para todo $i$; entonces, para cada $B\in \mathfrak{J}$ con $P(B)>0$:
-    \begin{align}
-        P(A_i | B) = \frac{P(A_i)P(B|A_i)}{\sum_j P(B|A_j)P(A_j)} \quad\text{ para todo $i$. }
-    \end{align}
-\end{corollary}
+\subsection{Probabilidad geom\'etrica}
+Sea $(\Omega, \lm)$ un espacio medible, y asuma $m$ c\'omo una medida geom\'etrica, tal como longitud, \'area o volumen, definidas sobre $(\Omega, \lm)$. 
+Definimos la probabilidad de un evento $A$ como: 
+\begin{align}
+    P(A) = \frac{m(A)}{m(\Omega)}
+\end{align}
 
 %Que se debe cumplir para que una historia o una actividad se pueda llevar acabo, 
 

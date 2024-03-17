@@ -1,0 +1,133 @@
+\section{ Four Basic Counting Principles }
+\begin{definition}{\bf (Pairwise disjoint sets.)}
+    Let $S$ be a set. A partition of $S$ is a collection $S_1, S_2,\ldots, S_m$ of subsets of $S$ such that each element of $S$
+    is in exactly one of those subsets:
+    \begin{align*}
+        S_1\cup S_2\cup \cdots \cup S_m = S \quad \text{ and } \quad S_i\cap S_j = \emptyset \quad \text{ for all } i\not=j.
+    \end{align*}
+    Thus, the sets $S_1,S_2,\ldots,S_m$ are pairwise disjoint sets, and their union is $S$. The subsets $S_1,S_2,\ldots,S_m$ are called the parts of the partition.
+
+    The numbers of objects of a set $S$ is denoted by $|S|$ and is sometimes called the size of $S$.
+\end{definition}
+\begin{example}
+    \hspace{0mm}
+    \begin{enumerate}
+        \item $\Omega = \{ T, H \}$ where $T$ denotes tails and $H$ denotes heads. The set $\Omega$ is a partition of the set of all possible outcomes of a single coin toss.
+              $$\Omega = \{T\} \cup \{H\} $$
+    \end{enumerate}
+\end{example}
+
+\begin{definition}{\bf (Addition Principle.)}
+    Suppose that a set $S$ is partitioned into pairwise disjoint parts $S_1, S_2, \ldots , S_n$. The number the 
+    of objects in $S$ can be determined by finding the number of objects un each of the parts, and adding the 
+    number so obtained:
+    \begin{align}
+        |S| = |S_1| + |S_2| + \ldots + |S_n|.
+    \end{align}
+    If the sets $S_1,S_2,\ldots,S_m$ are allowed to overlap, then a more profound principle, the inclusion-exclusion principle, is needed.
+\end{definition}
+
+\begin{example}
+    \hspace{0mm}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+\end{example}
+\begin{definition}{\bf (Multiplication Principle.)}
+    Let $S$ be a set of ordered pairs $(a,b)$ of objects, where the first object a comer from a set of size $p$
+    , and for each choice of object $a$ there are $q$ choices for object $b$. Then the size of $S$ is $p\times q$:
+    \begin{align}
+        |S| = p\times q.
+    \end{align}
+    The mulplication principle is actually a consequence of the addition principle.
+
+    A second useful formulation of the multiplication principle is as follows: If a first
+    task has $p$ outcomes and, no matter what the outcome of the first task, a second task
+    has $q$ outcomes, then the two tasks performed consecutively have $p \times q$ outcomes.
+\end{definition}
+\subsection{Principio de la adici\'on}
+Si un suceso $S_{1}$  ocurre de $a$ maneras y un suceso $S_{2}$ ocurre de $b$ maneras entonces puede decirse que el n\'umero total de maneras en que puede
+ocurrir $S_1$ o el suceso $S_2$ es $a+b$.
+
+
+\begin{example}
+    \hspace{0mm}
+    \begin{enumerate}[{\rm 1}]
+        \item {\bf Ejemplo 1:}  ?`Cu\'antos resultados diferentes se pueden obtener lanzando un dado o una moneda?
+        Indetificamos que el experimento consiste en elegir que objeto lanzar, suponga:
+        $$ S_1\colon = \text{ lanzar el dado } \text{ y } S_2 \colon = \text{ lanzar la moneda. }$$
+        Si se elije el dado, entonces el n\'umero de resultados posibles es $\{1,2,3,4,5,6\}$ o 
+        si elige la moneda el n\'umero de resultados posibles es $\{C,S\}$. 
+        As\'i el n\'umero total de resultados posibles para el suceso $S_1$ o $S_2$ es: $$6+2=8$$.
+        \item {\bf Ejemplo 2:}  ?`Cu\'antos resultados diferentes se pueden obtener lanzando un dado y una moneda?
+        Considerando los mismo sucesos $S_1$ y $S_2$ del ejemplo anterior, el experimiento consiste en lanzar un dado y seguidamente lanzar una moneda.
+        nuestro conjunto de resultados ser\'ia
+        $$ \{ {(1,C), (1,S)}, (2,C), (2,S), \ldots, (6,C), (6,S) \}. $$
+        As\'i la cantidad de sucesos es $6\cdot2 = 12.$
+        
+    \end{enumerate}
+\end{example}
+
+\subsection{Principio de la multiplicaci\'on}
+\begin{definition}{\bf (Principio de la multiplicaci\'on)}
+    Si un experimento consiste de $n$ etapas o sucesos y si la primera etapa o suceso puede ser realizada de $n_{1}$ maneras, la segunda
+    etapa de $n_{2}$ maneras, la $k$-\'esima etapa de $n_{k}$ maneras, entonces el experimento completo puede ser realizado
+    de $n_{1}\cdot n_{2}\cdot\ldots\cdot n_{k}$ maneras.
+\end{definition}
+
+
+\subsection{Permutaciones}
+
+?`De cu\'antas formas se pueden ordenar u organizar los elementos de un conjunto o de un subconjunto? Para responder tal pregunta, realicemos
+las siguientes definiciones. 
+\begin{definition}
+    \hspace{0.5mm}
+    \begin{enumerate}[{\rm 1.}]        
+        \item {\rm Ordenar: } significa poner una cantidad de elementos en un orden espec\'ifico que obedece a una regla l\'ogica.
+        \item {\rm Organizar: } implica poner una cantidad de elementos de forma que no tienen un orden espec\'ifico o dicho orden no es importante 
+        dentro de un determinado contexto.
+        \item {\rm Conjunto: } 
+        \item {\rm Subconjunto: } 
+        \item {\rm Orden: } corresponde a la aplicaci\'on de un criterio espec\'ifico que le confiere cierta jerarqu\'ia a los elementos que forman parte de un conjunto. 
+        
+    \end{enumerate}
+\end{definition}
+
+Definimos lso conceptos de permutaci\'on y combinaci\'on: 
+
+\begin{definition}{Permuatci\'on}
+
+\end{definition}
+
+%\subsection{Talleres}
+% \begin{enumerate}[{\rm 1.}]
+%     \item Se selecciona al azar un veh\'iculo en cierta ciudad. Si todas las letras de la placa el veh\'iculo son diferentes, 
+%     ?`Cu\'antos autos tienen la misma caracter\'istica? ?`Cu\'antos autos tienen placas con todos sus d\'igitos impares? \\
+%     {\bf Soluci\'on:} 
+%     Suceso:\\ $S_1\colon=$ formar una placa de auto eligiendo una letra del abcdario sin repetir y elegir un n\'umeros del $1$ al $10$.
+
+    
+%     Sabemos que las letras del abcedario son 27, aplicando el principio de la multiplicaci\'on, el n\'umero de placas posibles es:
+%     $$ 27\cdot26\cdot25\cdot10\cdot10\cdot10= 17550000 $$
+
+%     $$ 27P3\cdot10C3 = $$
+%     \item {\bf Ejemplo 2:} Se lanzan $20$ monedas no cargadas, ?`Cu\'antos posibles resultados tienen solo tres caras?\\[5pt]
+%     {\bf Soluci\'on:} 
+%     $$\binom{20}{3} = \frac{20!}{(20-3)!3!} = \frac{20\cdot19\cdot18\cdot17!}{17!3!}=20\cdot19\cdot3=1140 $$
+%     \item Se seleccionan al azar tres personas de un grupo por 10
+%     obreros, 4 pintores y 6 carpinteros. ?`Cu\'antos grupos diferentes conformados por un obrero, un pintor y un carpintero se pueden formar?\\[5pt]
+%     {\rm\bf Soluci\'on: } 
+%     $$ 10\cdot4\cdot 6 = 240 $$
+%     \item El pedido de una computadora personal digital puede especificar uno de cinco tama\~nos de memor\'ia, cualquier tipo de monitos de tres posibles,
+%     cualquier tama\~no de disco duro de entre cuatro posibles, y puede incluir o no una tableta para l\'apiz electr\'onico. ?`Cu\'antos sistemas distintos pueden ordenarse?\\[5pt]
+%     {\rm\bf Soluci\'on: }
+%     $$ 5\cdot3\cdot4\cdot 2 = 120. $$
+%     El total de sistemas que pueden formarse son $120$.
+%     \item Un proceso de manufactura est\'a formado por $10$ operaciones, las cuales pueden efectuarse en cualquier orden. ?`Cu\'antas secuencias de producci\'on distintas son posibles?\\[5pt]
+%     {\rm\bf Soluci\'on: }
+%     $$ 10!=3628800  $$
+%     \item Un proceso de manufactura est\'a formado por $10$ operaciones. Sin embargo, cinco de ellas deben terminarse antes de que pueda 
+%     darse inicio a las otras cinco. Dentro de cada conjunto de cinco, las operaciones pueden efectuarse en cualquier orden. ?`Cu\'al es el n\'umero de secuencias de operaciones distintas posible?\\[5pt]
+%     {\rm\bf Soluci\'on: }
+%     $$ P_5^{10} +  =  $$
+% \end{enumerate}

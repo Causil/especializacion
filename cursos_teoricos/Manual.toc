@@ -13,16 +13,19 @@
 \contentsline {part}{II\hspace {1em}Metodolog\'ias}{7}{part.2}%
 \contentsline {chapter}{\numberline {4}CRISP-DM}{8}{chapter.4}%
 \contentsline {part}{III\hspace {1em}Mathematics}{9}{part.3}%
-\contentsline {chapter}{\numberline {5}Probabilidad}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}T\'ecnicas de conteo}{11}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Principio de la multiplicaci\'on}{11}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Principio de la adici\'on}{11}{subsection.5.1.2}%
+\contentsline {chapter}{\numberline {5}Combinatorics}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1} Four Basic Counting Principles }{11}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Principio de la adici\'on}{12}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Principio de la multiplicaci\'on}{12}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Permutaciones}{12}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Talleres}{12}{subsection.5.1.4}%
-\contentsline {section}{\numberline {5.2}Permutaciones, combinaciones y variaciones}{13}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Conceptos b\'asicos de probabilidad}{13}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Conceptos b\'asicos}{13}{subsection.5.3.1}%
-\contentsline {subsubsection}{Espacio de probabilidad}{13}{section*.3}%
-\contentsline {subsection}{\numberline {5.3.2}Espacio de probabilidad de Laplace}{14}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Probabilidad condicional y eventos independientes}{14}{subsection.5.3.3}%
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliograf\'ia}{15}{equation.5.3.3}%
+\contentsline {chapter}{\numberline {6}Probabilidad}{14}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Permutaciones, combinaciones y variaciones}{14}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Conceptos b\'asicos de probabilidad}{14}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Conceptos b\'asicos}{14}{subsection.6.2.1}%
+\contentsline {subsubsection}{Espacio de probabilidad}{14}{section*.3}%
+\contentsline {subsection}{\numberline {6.2.2}Espacio de probabilidad de Laplace}{15}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Probabilidad condicional y eventos independientes}{15}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Probabilidad geom\'etrica}{16}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Variables aleator\'ias y sus distribuciones}{16}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Definiciones y propiedades}{16}{subsection.6.3.1}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliograf\'ia}{16}{proposition.6.3.1}%
