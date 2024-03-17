@@ -40,4 +40,83 @@ Si el conjunto de los posibles resultados de un experimento aleatorio es conocid
     \end{enumerate}
 \end{definition}
 
+\subsection{Espacio de probabilidad de Laplace}
 
+\begin{definition}(Espacio de probabilidad de Laplace)
+Un espacio de probabilidad $(\Omega, \lm,P)$ con $\Omega$ finito, $\lm = \mcp(\Omega)$ y $P(w) = 1/|\Omega|$
+ para todo $w\in \Omega$ es llamado un espacio de probabilidad de Laplace. La medida de probabilidad $P$ es llamada uniforme o la distribuci\'on cl\'asica 
+ sobre $\Omega$.
+\end{definition}
+
+\subsection{Probabilidad condicional y eventos independientes}
+
+\begin{definition}(Probabilidad condicional)
+    Sea $(\Omega, \lm, P)$ un espacio de probabilidad. Si $A,B\in \lm$ con $P(A)>0$, entonces la probabilidad de el evento $B$ bajo la condici\'on $A$ es definida de la siguiente manera:
+    \begin{align}
+        P(B|A) \colon = \frac{P(A\cap B)}{P(A)}
+    \end{align}
+\end{definition}
+
+\begin{theorem}(Medida de probabilidad condicional)
+    Sea $(\Omega, \lm, P)$ un espacio de probabilidad, y sea $A\in \lm$ con $P(A)> 0$. Entonces:
+    \begin{enumerate}[{\rm 1.}]
+        \item $P( \hspace{0.5mm}\cdot\hspace{0.5mm} |\hspace{0.5mm}A)$ es una medida de probabilidad sobre $\Omega$ centrada en $A$, esto es, $P(A|A)=1$.
+        \item Si $A\cap B = \emptyset$, entonces $P(B|A)=0$.
+        \item $P(B\cap C| A)=P(B|A\cap C)P(C|A)$ si $P(A\cap C)> 0.$
+        \item Si $A_1, A_2,\ldots, A_n \in \lm$ con $P(A_1 \cap A_2 \cap \cdots \cap A_{n-1})> 0$, entonces 
+        \begin{align*}
+            P(A_1 \cap A_2 \cap \cdots \cap A_{n}) = P(A_1)P(A_2|A_1)P(A_3|A_1\cap A_2)\cdots P(A_n|A_1\cap A_2\cap \cdots \cap A_{n-1}).
+        \end{align*}
+    \end{enumerate}
+\end{theorem}
+
+\begin{definition}{\bf (Distribuciones A priori y A Posteriori)}\newline
+    Sea $A_1, A_2, \cdots$ una partici\'on finita o contable de $\Omega$ con $P(A_i)>0$ para todo $i$. Si $B$ 
+    es un elemento de $\lm$ con $P(B)>0$, entonces $(P(A_n))_{n}$ es llamada la distribuci\'on ``a priori'', esto es, antes de que suceda $B$, 
+    y $(P(A_n|B))_{n}$ es llamada la distribuci\'on ``a posteriori'', esto es, depu\'es que suceda $B$.
+\end{definition}
+
+\begin{definition}{\bf (Eventos independientes)}
+    Dos eventos $A$ y $B$ se dicen ser independientes si y s\'olo si:
+    \begin{align*}
+        P(A\cap B) = P(A)P(B).
+    \end{align*}
+    Si no se cumple la condici\'on anterior los eventos ser\'ian dependientes. 
+\end{definition}
+
+\begin{definition}{\bf (Familia independiente)}
+    Una familia de eventos $\{A_i \hspace{0.5mm}|\hspace{0.5mm} i\in I\}$ se dice ser independiente si 
+    \begin{align*}
+        P \left( \bigcap_{i\in J} P(A_i)\right) = \prod_{i\in J}P(A_i)
+    \end{align*}
+    para cada subconjunto finito $J\not=\emptyset$ de $I$. Estos eventos son mutuamente independientes.
+\end{definition}
+
+\begin{definition}{\bf (Eventos independientes por parejas)}
+    \hspace{0.4mm}\newline
+    Una familia de eventos $\{ A_i \hspace{0.5mm}|\hspace{0.5mm} i\in I\}$ se dice ser independiente por parejas $(2\times 2)$ si: 
+    \begin{align*}
+        P(A_i \cap A_j) = P(A_i)P(A_j) \text{ para todo $i\not= j$. }
+    \end{align*}
+    Independencia de pares no implica independencia de familia o eventos mutuamente independientes.
+\end{definition}
+
+\begin{theorem}{\bf (Teorema de la probabilidad total)}
+    Sea $A_1, A_2, A_3, A_4, \ldots,$ particiones finitas o countables de $\Omega$, esto es, $A_i\cap A_j=\emptyset$ para todo  $i \not= j$
+    y  $\bigcup_{i=1}^{\infty} A_i = \Omega$; tal que $P(A_i)> 0 $ para todo $A_i \in \mathfrak{J}$. Entonces, para cada $B\in \mathfrak{J}$:
+    \begin{align}
+        P(B) = \sum_{i} P(B|A_i)P(A_i)
+    \end{align}
+\end{theorem} 
+
+\begin{corollary}{\bf (Regla de Bayes)}
+    Sean $A_1,A_2, \ldots$ un partici\'on finita o contable de $\Omega$ con $P(A_i)>0$ para todo $i$; entonces, para cada $B\in \mathfrak{J}$ con $P(B)>0$:
+    \begin{align}
+        P(A_i | B) = \frac{P(A_i)P(B|A_i)}{\sum_j P(B|A_j)P(A_j)} \quad\text{ para todo $i$. }
+    \end{align}
+\end{corollary}
+
+%Que se debe cumplir para que una historia o una actividad se pueda llevar acabo, 
+
+
+%Microfrontend Como hacer una modularización de clientes en una aplicación web, o plugins
