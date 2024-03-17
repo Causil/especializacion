@@ -1,0 +1,17 @@
+%\fancyhead{}
+%\fancyhead[RE]{ \nouppercase \leftmark}
+%\fancyhead[LO]{ \nouppercase \rightmark}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyfoot{}
+%\renewcommand{\headrulewidth}{0.6pt}
+
+%\includepdf[pages=-]{imagenes/DistrifullLogo}
+
+%\renewcommand{\baselinestretch}{1.35}
+
+%\include{AGRADECIMIENTOS}
+
+%\listoftables
+
+%\bibliographystyle{plainnat}
+%\bibliography{bibliografiaTDG.bib}

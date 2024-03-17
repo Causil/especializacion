@@ -1,0 +1,142 @@
+%-------------------%DEF DE FUNCION COMPUESTA------------------%
+\newcommand{\compcent}[1]{\vcenter{\hbox{$#1\circ$}}}
+\newcommand{\comp}{\mathbin{\mathchoice
+  {\compcent\scriptstyle}{\compcent\scriptstyle}
+  {\compcent\scriptscriptstyle}{\compcent\scriptscriptstyle}}}
+%-------------------%DEF DE FUNCION COMPUESTA%-----------------% 
+
+%------------------------------nuevos comandos------------------%
+\newcommand{\N}{{\ensuremath{\mathbb{N}}}}
+\newcommand{\Z}{{\ensuremath{\mathbb{Z}}}}
+\newcommand{\Q}{{\ensuremath{\mathbb{Q}}}}
+\newcommand{\R}{{\ensuremath{\mathbb{R}}}}
+\newcommand{\C}{{\ensuremath{\mathbb{C}}}}
+\newcommand{\K}{{\ensuremath{\mathbb{K}}}}
+\newcommand{\J}{{\ensuremath{\mathbb{J}}}}
+\newcommand{\s}{{\ensuremath{\mathbb{S}}}}
+
+\newcommand{\mca}{{\ensuremath{\mathcal{A}}}}
+\newcommand{\mcb}{{\ensuremath{\mathcal{B}}}}
+\newcommand{\mcc}{{\ensuremath{\mathcal{C}}}}
+\newcommand{\mcs}{{\ensuremath{\mathcal{S}}}}
+\newcommand{\mct}{{\ensuremath{\mathcal{T}}}}
+\newcommand{\mcu}{{\ensuremath{\mathcal{U}}}}
+\newcommand{\mcp}{{\ensuremath{\mathcal{P}}}}
+\newcommand{\mcm}{{\ensuremath{\mathcal{M}}}}
+\newcommand{\mcn}{{\ensuremath{\mathcal{N}}}}
+\newcommand{\mcj}{{\ensuremath{\mathcal{J}}}}
+\newcommand{\mcf}{{\ensuremath{\mathcal{F}}}}
+\newcommand{\mcd}{{\ensuremath{\mathcal{D}}}}
+\newcommand{\mcx}{{\ensuremath{\mathcal{X}}}}
+\newcommand{\mce}{{\ensuremath{\mathcal{E}}}}
+
+\newcommand{\scra}{{\ensuremath{\mathscr{A}}}}
+\newcommand{\scrt}{{\ensuremath{\mathscr{T}}}}
+\newcommand{\scru}{{\ensuremath{\mathscr{U}}}}
+\newcommand{\scrp}{{\ensuremath{\mathscr{P}}}}
+\newcommand{\scrv}{{\ensuremath{\mathscr{V}}}}
+\newcommand{\scro}{{\ensuremath{\mathscr{O}}}}
+\newcommand{\scrb}{{\ensuremath{\mathscr{B}}}}
+\newcommand{\scrc}{{\ensuremath{\mathscr{C}}}}
+\newcommand{\scrf}{{\ensuremath{\mathscr{F}}}}
+\newcommand{\scrs}{{\ensuremath{\mathscr{S}}}}
+\newcommand{\scri}{{\ensuremath{\mathscr{I}}}}
+\newcommand{\scrj}{{\ensuremath{\mathscr{J}}}}
+\newcommand{\scrl}{{\ensuremath{\mathscr{L}}}}
+\newcommand{\scrm}{{\ensuremath{\mathscr{M}}}}
+\newcommand{\scrn}{{\ensuremath{\mathscr{N}}}}
+\newcommand{\scrk}{{\ensuremath{\mathscr{K}}}}
+\newcommand{\scre}{{\ensuremath{\mathscr{E}}}}
+\newcommand{\scrq}{{\ensuremath{\mathscr{Q}}}}
+
+% Funci\'on salto del gradiente 
+\newcommand{\lbt}{\llbracket}
+\newcommand{\rbt}{\rrbracket}
+
+% producto interior
+\newcommand{\lca}{\langle}
+\newcommand{\rca}{\rangle}
+
+\newcommand{\ndiv}{\hspace{-4pt}\not|\hspace{2pt}}
+
+%-----------------funcion restricci\'on---------------% 
+\newcommand{\restr}[1]{\raisebox{-.5ex}{$|$}_{#1}}
+\newcommand{\restrd}[2]{{#1}\raisebox{-.5ex}{$|$}_{#2}}
+%---------------------------------------------------%
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\DeclareMathOperator{\inte}{int}
+\DeclareMathOperator{\vol}{vol}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\ips}{\langle \cdot, \cdot\rangle}
+\DeclareMathOperator{\norm}{\|\cdot\|}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\im}{Im}
+\def\card{\mathop{\rm card}}
+\def\diam{\mathop{\rm diam}}
+\def\dist{\mathop{\rm dist}}
+\def\Lim{\mathop{\rm lim}}
+\def\Inf{\mathop{\rm inf}}
+\def\Max{\mathop{\rm max}}
+\def\Min{\mathop{\rm min}}
+\def\Liminf{\mathop{\rm lim\,inf}}
+\def\Limsup{\mathop{\rm lim\,sup}}
+
+
+\newcommand{\cl}{\overline}
+
+\DeclareRobustCommand{\rchi}{{\mathpalette\irchi\relax}}
+\newcommand{\irchi}[2]{\raisebox{\depth}{$#1\chi$}} % inner command, used by \rchi
+%--Programing notation derivate Lagrange ---%
+%#1 it's a variable of function
+%#2 it's a variable of degree function
+%#3 it's a variable of function
+%#4 it's a variable that expecific if def o not
+\newcommand{\dvlagrange}[4]{
+  \hspace{-4.7mm}
+  \notblank{#4}{
+      \ifstrequal{#1}{alpha}{$\alpha^{#2}(#3)$}{$#1^{#2}(#3)$}
+    }{
+    \ifnumcomp{#2}{>}{2}{
+      \ifstrequal{#1}{alpha}{$\alpha^{#2}(#3)$}{$#1^{(#2)}(#3)$}
+    }{
+      \ifstrequal{#2}{2}{$#1^{\prime\prime}(#3)$}{$#1^{\prime}(#3)$}
+    }
+  }
+  \hspace{-4.7mm}
+  }
+\newcommand{\dvleibniz}[4]{
+  \notblank{#4}{
+    $\dfrac{\mathnormal{d}^{#2}  #1}{\mathnormal{ d #3^{#2}}}$
+  }{
+  \ifnumcomp{#2}{>}{1}{
+    $\dfrac{\mathnormal{d}^{#2}  #1}{\mathnormal{d} #3^{#2}}$
+  }{
+    $\dfrac{\mathnormal{d} #1}{\mathnormal{d #3}}$
+  }
+}
+}
+
+\newcommand{\dvnewton}[2]{
+  \ifnumcomp{#2}{>}{1}{
+    $\overset{..}{#1}$
+  }{
+    $\overset{.}{#1}$
+  }
+}
+ % si no queremos que a�ada la palabra "Capitulo"
+%\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el �ndice
+%\markboth{AGRADECIMIENTOS}{Agradecimiento} % encabezado 
+%\addcontentsline{toc}{section}{Resumen} % si queremos que aparezca en el �ndice
+%\markboth{RESUMEN}{Resumen} % encabezado
+%\usepackage{nopageno}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\pagestyle{empty}
+
+\newcommand{\tree}[2]{%
+    \ifstrequal{#1}{a}%
+        {$\sqrt{#2}$}%
+        {\ifstrequal{#1}{b}{Hi}{\PackageError{tree}{Undefined option to tree command}{}}}%
+        }

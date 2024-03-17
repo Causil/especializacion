@@ -1,0 +1,53 @@
+\section{Hooks}
+Los hooks son una nueva caracter\'istica en React 16.8. Estos me permiten usar el estado y otras caracteristicas de React sin escribir un clase.
+
+Los hooks resuelven una amplia variedad de problemas aparentemente desconectados en React que hemos encontrado durante m\'as de conco a\~nos de escribir
+mantener decenas de miles de componentes.
+
+Esta secc\'on es tomada de \href{https://es.reactjs.org/docs/hooks-intro.html}{\blue Documentaci\'on de React}
+
+En lo siguiente veremos unos tantos hooks.
+\input{Develop/Languages/JavaScript/Frameworks/React/Hooks/useState/useState.tex}
+\input{Develop/Languages/JavaScript/Frameworks/React/Hooks/useContext/useContext.tex}
+\input{Develop/Languages/JavaScript/Frameworks/React/Hooks/useRef/useRef.tex}
+\input{Develop/Languages/JavaScript/Frameworks/React/Hooks/useMemo/useMemo.tex}
+\subsection{useInterval}
+
+
+\section{react-router-dom}
+
+\subsection{Enrutamiento del lado del cliente}
+
+React router, es una librería que nos permite actualizar la URL desde un clic sin realizar una solicitud
+de otro documento desde el servidor, esto permite mostrar inmediatamente una nueva interfaz de usuario y realizar solicitudes
+de datos con b\'usqueda para actualizar la p\'agina con nueva informaci\'on.
+
+Esto permite experiencias de usuario m\'as r\'apidas porque el navegador no necesita solicitar un documento
+completamente nuevo o volver a evaluar los activos de CSS y JavaScript para sigueinte p\'agina. Tambi\'en permite experiencias de usuario m\'as din\'amizas
+con cosas como la animaci\'on.
+
+\subsection{Rutas anidadas}
+El enrutamiento anidado es la idea general de acoplar segmentos de URL a la jerarqu\'ia y los datos de los componentes. Las rutas anidadas de React
+Router se inspiraron en el sistema de enrutamiento de Ember.js alrededor de 2014. El equipo de Ember se dio cuenta de que, en casi todos los casos, los segmentos de la URL determinan:
+\begin{itemize}
+  \item Los dise\~nos para presentar en la p\'agina.
+  \item Las dependencias de datos de esos dise\~nos.
+\end{itemize}
+
+React Router adopta est\'a convenci\'on con API para crear dise\~nos anidados acoplados a segmentos de URL y datos.
+
+
+\subsection{Segmentos din\'amicos}
+
+Se utiliza el hooks useParams de React-Router-Dom el cu\'al se utiliza para capturar los parametros en la URL en los componentes,
+por ejemplo,
+\begin{verbatim}
+  <Route  exact path="/usuario/:username/:age"  element={<Usuario />} />
+\end{verbatim}
+En la componente usuario si se invoca el useParams se obtiene un objeto
+\begin{verbatim}
+  {
+    username:"Nombre_especificado_Url",
+    age:"Edad_especificada"
+  }
+\end{verbatim}

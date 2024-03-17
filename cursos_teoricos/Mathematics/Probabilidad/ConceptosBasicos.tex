@@ -1,0 +1,43 @@
+\subsection{Conceptos b\'asicos}
+\subsubsection{Espacio de probabilidad}
+
+En est\'a secci\'on desarrollamos la noci\'on de medida de probabilidad y se presentan sus propiedades b\'asicas.
+
+\begin{definition}{\bf (Experimiento aleatorio)}
+Un experimento es aleatorio si su resultado no puede ser determinado de antemano.
+\end{definition}
+
+Si el conjunto de los posibles resultados de un experimento aleatorio es conocido, a este conjunto se le llamada espacio aleatorio
+
+\begin{definition}{\bf (Espacio muestral)}
+    El conjunto $\Omega$ de todos los posibles resultados de un experimiento aleatorio es llamado espacio muestral. Un elemento $w\in \Omega$ es llamado 
+    un resultado o punto muestral.
+\end{definition}
+
+\begin{example}{\bf (Ejemplos de espacios muestrales)}
+    \hspace{1cm}
+    \begin{enumerate}[{\bf 1.}]
+    \item {\bf Experimento:} Lanzar una moneda. Los posibles resultados en este caso son ``cara'' y ``sello''. Esto es 
+    $$\Omega = \{ C,S \}$$
+    \item {\bf Experimeinto:} Lanzar un dado ordianrio tres veces consecutivas. En este caso los posibles resultados son tripletas de la forma
+    $(i,j,k)$ donde $i,j,k\in \{1,2,3,4,5,6\}$. Esto es
+    $$\Omega = \{ (i,j,k) : i,j,k\in \{1,2,3,4,5,6\} \}$$
+    \item {\bf Experimento:}  
+    \end{enumerate}
+\end{example}
+
+\begin{definition}{\bf (Espacio muestral discreto)}
+    Un espacio muestral $\Omega$, es llamado discreto si es finito o contable.
+\end{definition}
+
+
+\begin{definition}{\bf ($\sigma$ - \'Algebra)}
+    Sea $\Omega\neq\emptyset$. Una colecci\'on $\mathcal{F}$ de subconjuntos de $\Omega$ es llamada $\sigma$-\'algebra si satisface las siguientes propiedades:
+    \begin{enumerate}
+        \item $\Omega\in\mathcal{F}$.
+        \item Si $A\in\mathcal{F}$, entonces $A^{c}\in\mathcal{F}$.
+        \item Si $A_{1},A_{2},\ldots\in\mathcal{F}$, entonces $\bigcup{i=1}^{\infty}A_{i}\in\mathcal{F}$.
+    \end{enumerate}
+\end{definition}
+
+

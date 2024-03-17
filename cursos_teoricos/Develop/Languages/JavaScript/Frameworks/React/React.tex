@@ -1,0 +1,120 @@
+\section{React}
+
+\begin{enumerate}
+	\item Para crear un app con React utilizamos el comando 
+	\begin{verbatim}
+	npx create-react-app nombre_app 
+	\end{verbatim}
+	si queremos que quede con el mismo nombre del directorio utilizamos 
+	\begin{verbatim}
+		npx create-react-app ./ 
+	\end{verbatim}
+    El proyecto adopta el nombre del directorio que lo contiene. Los nombres de los proyectos en React todos van en min\'uscula 
+	\item Para instalar comandos que copiemos y peguemos en el package.json utilizamos el comando 
+	\begin{verbatim}
+		 npm install --legacy-peer-deps
+	\end{verbatim}
+    \item Para crear un componente b\'asico en React utilizamos rafce 
+    vienen de la extensi\'on ES7+ React/Redux/React-Native snippets
+\end{enumerate}
+
+
+
+
+\section{Estructura de proyectos en React}
+
+\subsection{Primera estructura de carpertas: simple}
+
+\begin{figure}[h]
+  \center
+  \begin{minipage}{10cm}
+    \includegraphics[width=9cm]{Develop/Languages/JavaScript/Frameworks/React/images/FoldersSimpleReact.png}
+  \end{minipage}
+\end{figure}
+
+
+In the beginning, when you run the create-react-app, there are no folders in the src folder. Most people create a components folder and a hooks folder as their first two folders. Now, this is a very simple folder structure, it's not a bad way to do things for smaller projects with less than 10-15 components.
+Hooks
+
+Every custom hook in your project is stored in the hooks folder. This folder is useful for any size project because almost every project has more than one custom hook, and having a place to put them all can be extremely helpful.
+Components
+
+Since every component in your entire application will be contained in the components folder, the simple folder structure, it is very easy to understand. Since this folder can become very difficult to manage as your project grows beyond 10-15 components, our components are dispersed across multiple folders and given more structure in all other folder structures. However, for small projects, a single folder will do just fine without this extra complexity.
+tests
+
+This structure's final folder, the tests folder, contains all of your test code. Typically, We can discover that people keep all of their tests in a single folder for smaller projects like this one (that is if they write any tests at all). Overall, We tend to believe this is fine for smaller projects, but as your project gets bigger, the recommendation would be to change this.
+Advantages
+
+We can conclude that the most important advantage of this folder structure is its simplicity, but the structure is not that much functional beyond that.
+Disadvantages
+
+You'll observe that this folder structure leaves it up to the user to decide what to do with objects like photos, utility functions, React contexts, etc. The reason is that you can get away with merely placing those files in the root of your src folder as smaller projects typically don't have as many of these extra files. Any project larger than a small project should use at least an intermediate folder structure because it will become a mess quickly as your project grows.
+
+\subsection{Segunda estructura de carpertas: Intermedio}
+
+\begin{figure}[h!]
+  \center
+  \begin{minipage}{5cm}
+    \includegraphics[width=4cm]{Develop/Languages/JavaScript/Frameworks/React/images/FolderIntermedioReact.png}
+  \end{minipage}
+\end{figure}
+
+As you can see from the image above, this folder structure has a ton more folders that cover just about any file type you could imagine in a React project. With a folder layout like this, you should primarily only have files like your index.js file in the root of your src folder.
+
+The fact that we are now segmenting our project into pages, which contain all the logic for specific pages in a single location, is the other significant difference between this folder structure and the simple folder structure. The ability to find all the data related to your pages in one folder rather than having to search through multiple folders and sift through irrelevant files is really helpful when working on larger projects.
+
+Additionally, you'll see that our tests are now tailored to the particular folder and files they are testing. This makes it simpler to identify the code that has been tested, which in turn makes testing code easier in general when tests are positioned next to the code that is being tested.
+Pages
+
+The addition of the pages folder represents the most significant change to this folder structure. Each page of your application should have its own folder in this location. There should be a single root file for your page (usually index.js) and all the files that are specific to that page inside of those page-specific folders. For instance, the Login page in the image above has the root file index.js, the LoginForm component, and a unique hook called useLogin. Since the Login page is the only place that the component and hook are ever used, they are stored with this page rather than in the global hooks or components folders.
+
+The main advantage of this system over the previous (simple) folder structure is the separation of page-specific code from your more general global code. When all of the pertinent code is centralized in a single folder, it is simpler to understand what your application is doing.
+Components
+
+Another significant difference in this example is the further subdivision of our components folder into subfolders. These subfolders are quite helpful since they keep your components separated into different groups rather than just being a big blob of them. Our example includes a ui folder that contains all of our user interface elements, such as buttons, modals, cards, etc. For controls related to forms, such as checkboxes, inputs, date pickers, etc., we also have a form folder.
+
+This components folder can be tailored and broken down anyway you see appropriate based on the requirements of your project, but in ideal circumstances, this folder shouldn't grow too large as many of your more intricate components will be kept in the pages folder.
+Hooks
+
+The hooks folder is the last folder that somehow repeats the simple folder structure. This folder is nearly comparable to the previous hooks folder, but it only stores global hooks that are used across several pages, not every hook in your application. This is due to the fact that the pages folder houses all page-specific hooks.
+Assets
+
+All of the project's photos, CSS files, font files, etc. are located under the assets folder. All that isn't related to coding will be kept in this folder.
+Context
+
+All of your React context files used on lots of pages are kept in the context folder. Having a single folder to put them in is particularly helpful when working on larger projects because you will likely utilize several contexts throughout your application. You can swap out this folder with a better collection of folders for storing Redux files if you're using a different global data store, like Redux.
+Data
+
+Comparable to the assets folder, the data folder is used to house our data assets, such as JSON files that contain information used in our programs (store items, theme information, etc). Additionally, a file containing global constant variables may be kept in this subdirectory. This is helpful if your program uses a lot of constants, such as environment variables.
+Utils
+
+The utils folder is the last new folder that we have in this type of structuring. To store all utility features, including formatters, use this folder. This folder is rather simple, and all of the files inside of it ought to be simple as well. Since a utility function with side effects is probably not just a straightforward utility function, I prefer to only place pure functions in this subdirectory. Of course, there are exceptions to any rule.
+Advantages
+
+The fact that each of your files has its own folder is the main advantage of this new approach. There should be almost no files in the root src folder.
+
+Your files are now collocated according to the page they are used in, which is another enormous advantage. This is advantageous since it generally makes understanding, writing, and reading code easier and decreases the amount of global code kept in your general components, hooks, etc. directories. As a project expands, it becomes more and more crucial to have files that are used together stored together.
+Disadvantages
+
+The greatest disadvantage of this method is that your pages folder will start to lose value as your application gets bigger and bigger. This is because it is increasingly likely that a single feature will be used across numerous pages rather than simply one when your application obtains more pages. This reduces the use of your pages folder and bloats your other files because you have to relocate the code out of the pages folder and into the other folders in your program.
+
+The pages folder for your to-do page can house all the code for your to-dos, for instance, if your simple to-do list application only keeps track of your tasks on one page. You can no longer retain these to-do files in your pages folder if you later create a second page that allows you to categorize your to-dos under projects. This is because you now have two pages that must display to-do information. Nearly all of your code will be shared over numerous pages until your site reaches a certain size, which is where the sophisticated folder structure comes in.
+
+
+\subsection{Tercera estructura de carpertas: avanzado}
+
+\begin{figure}[h]
+  \center
+  \begin{minipage}{5cm}
+    \includegraphics[width=4cm]{Develop/Languages/JavaScript/Frameworks/React/images/FolderAvantageReact.png}
+  \end{minipage}
+\end{figure}
+
+
+
+Tomado de un art\'iculo  \href{https://dev.to/fpaghar/folder-structuring-techniques-for-beginner-to-advanced-react-projects-30d7}{\blue Dev}
+
+
+?`Qu\'e es una SPA?
+
+\input{Develop/Languages/JavaScript/Frameworks/React/Hooks/Hooks.tex}

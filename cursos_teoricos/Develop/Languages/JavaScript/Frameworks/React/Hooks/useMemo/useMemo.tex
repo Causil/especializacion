@@ -1,0 +1,21 @@
+\subsection{useMemo}
+
+Es un hooks de React que te permite guardar en cach\'e el resultado de un c\'alculo entre renderizados. 
+
+\begin{lstlisting}
+    const cachedValue = useMemo(calculateValue, dependencies);
+\end{lstlisting}
+
+{\Large\bf Referencia}
+
+Se llama a useMemo en el nivel superior de tu compoente para guardar en cach\'e un c\'alculo entre rerenderizados: 
+
+{\normalsize\bf Par\'ametros}
+
+
+\begin{itemize}
+    \item[calcularValor: ] la funci\'on que calcula el valor que deseas memorizar. Debe ser pura, no debe acerptar argumentos y debe devolver un valor de cualquier tipo. React llamar\'a a tu funci\'on durante el renderizado inicial. 
+    En renderizados posteriores, React devolver\'a el mismo valor nuevamente si las dependecias no han cambiado desde el \'utimo renderizado. De lo contrario, llamar\'a a calcularValor, devolver\'a su resultado y lo almacenar\'a en caso de que pueda reutilizarse m\'as tarde.
+    \item[dependecias: ] la lista de todos los valores reactivos a los que se hace referencia dentro del c\'odigo calcularValor. Los valores reactivos incluyen props, estado y todas las variables y funciones declaradas directamente dentro del cuerpo de tu componente. Si tu linter
+\end{itemize}
+

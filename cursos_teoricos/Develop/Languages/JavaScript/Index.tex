@@ -1,0 +1,68 @@
+\part{JavaScript}
+
+JavaScript (JS) es un lenguaje de programaci\'on ligero, interpretado, o compilado 
+\href{https://es.wikipedia.org/wiki/Compilaci%C3%B3n_en_tiempo_de_ejecuci%C3%B3n}{\blue justo a tiempo}
+con \href{https://developer.mozilla.org/es/docs/Glossary/First-class_Function}{\blue funciones de primera clase}.
+Si bien es m\'as conocido com oun lenguaje de scripting(secuencias de comandos) para p\'aginas web, y es usado en 
+\href{https://es.wikipedia.org/wiki/JavaScript}{\blue muchos entornos fuera del navegador}, tal como 
+\href{https://developer.mozilla.org/es/docs/Glossary/Node.js}{\blue Node.js} 
+\href{https://couchdb.apache.org/}{\blue Apache CouchDB} y \href{https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/}{\blue Adobe Acrobat}
+JavasScript es un lenguaje de \href{https://developer.mozilla.org/es/docs/Glossary/Prototype-based_programming}{\blue programaci\'on basada en prototipos}, multiparadigma, de un solo hilo, din\'amico, con soporte para 
+programaci\'on orientada a objetos, imperativa y declarativa (por ejemplo programaci\'on funcional). Lee m\'as en \href{https://developer.mozilla.org/es/docs/conflicting/Web/JavaScript}{\blue acerca de JavaScript}.
+
+Esta secci\'on est\'a dedicada al lenguaje en s\'i, y no a las partes que son espec\'ificas de las p\'aginas web u otros entornos host. Para informaci\'on acerca de 
+%\href{}{}
+
+que debe saber un desarrollador Junior en JavaScript?
+
+Un desarrollador Junior en JavaScript debe tener un conocimiento b\'asico de la sintaxis de JavaScript, las buenas pr\'acticas para la escritura de c\'odigo, los conceptos de orientaci\'on a objetos, las estructuras de datos y los patrones de dise\~no. Tambi\'en debe estar familiarizado con los frameworks y librerías populares, como jQuery, React, Angular y Node.js. Adem\'as, es importante conocer los conceptos de seguridad web, los protocolos de red comunes y c\'omo optimizar el rendimiento de la aplicaci\'on.
+
+\chapter{Mi Roadmap}
+JavaScript es un lenguaje de alto nivel, que nos permite manipular el DOM de una p\'agina web, 
+de est\'a manera podemos darle interactividad a los lenguajes de marcaci\'on como HTML y de estilos como CSS, en resumidas es para programar el comportamiento de p\'aginas web.
+
+Cu\'ando vamos a programar realizamos una lista de instrucciones que son ejecutadas por el computador, esas instrucciones se llaman declaraciones. Un programa en JavaScript es una lista de declaraciones que ejecuta el navegador para manipular el contenido HTML.
+
+\begin{description}
+    \item[Estructuras del lenguaje: ] expresiones, tipos de datos, variables, comentarios.
+    \item[Condiciones y Loops: ] if, while, for, switch, do, while.
+    \item[Funciones: ] qu\'e son las funciones y sus tipos.
+    \item[Otros recursos: ]  recursividad, rest y el operador spread, setTimeout, setInterval, decorators, forwarding, call, apply y bind.
+    \item[Operadores y conversi\'on de tipos: ] matem\'aticos, l\'ogicos, de comparaci\'on, de asignaci\'on, relacionales y conversi\'on de tipos.
+    \item[Arrays: ] map, filter, reduce, push, pops, slice, sort, splice, shuffle, shift, unshift.
+    \item[Json: ] m\'etodos JSON, toJson, Stringify, Parse.
+    \item[Objetos: ] referencia a objetos, Garbage collection, This, constructores, operador new, objeto Dates, objeto Math.
+    \item[Eventos: ] Eventos del navegador, Bubbling y Capturing, delegaci\'on de eventos, acciones est\'andar, dispatching, eventos personalizados.
+    \item[Eventos del rat\'on: ] Mouseover, Mouseout, Mouseenter, Mouseleave, Drap and drop, eventos del cursor, Scrolling.
+    \item[Eventos del teclado: ] keydown, keyup, keypress, keycode.
+    \item[Manipulaci\'on del DOM - conceptos b\'asicos: ] \'arbol DOM, navegaci\'on por el DOM, propiedades getElement, querySelector, propiedades del nodo.
+    \item[]
+\end{description}
+Los items ateriores hacen referencia a un conocimiento b\'asico en JavaScript.
+
+
+Para que nos hagamos una idea de lo que es JavaScript, este ejemplo es tomado de w3schools.
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+</body>
+</html> 
+\end{verbatim}
+
+Tenemos un documento muy sencillo de html, con un node h2 y p, el c\'odigo de JavaScript utiliza el atributo id del nodo p para poder incorporar un textco,
+podemos hacernos idea de como JavaScript manipula los elementos del DOM.
+\input{Develop/Languages/JavaScript/Basic/Basic.tex}
+\input{Develop/Languages/JavaScript/Intermedio/Intermedio.tex}
+\input{Develop/Languages/JavaScript/Advanced/Advanced.tex}
+\chapter{Frameworks of JavaScript}
+\input{Develop/Languages/JavaScript/Frameworks/React/React.tex}

@@ -1,0 +1,435 @@
+\part{Python}
+
+\chapter{Instalaciones en Python}
+
+Every project gets its own \href{https://docs.python.org/3/library/venv.html}{\blue venv}, too. Simply type ``python3 -m venv ./venv'' in your
+terminal (or ``python'' or whatever the name of your executable is) in your development
+folder. I won't upload my virtual environment to GitHub of course, so you have to do this
+on your own.
+
+Open project folder in VSCode \& download data
+Then select the new venv python-executable as the current project's python interpreter
+and then every new terminal in VSCode should automatically have the virtual
+environment activated. Create a jupyter notebook file (mine is called
+``explore\_data.ipynb'' for now) and select the new venv as kernel. It will automatically
+suggest to install ipykernel and all that when you execute the first cell.Then I download
+the Kaggle dataset using the Kaggle API. After you registered at Kaggle, you can use
+the command
+
+Nota para instalar kaggle primero se debe instalar de forma general fuera del entorno virtual y despu\'es de forma local en en el 
+entorno virtual, y darle permisos con el comando chmod 600 $\sim$/.kaggle/kaggle.json, para instalarlo de forma general se utiliza el comando pip install --user kaggle, se dan los permisos
+utilizando chmod 600 $\sim$/.kaggle/kaggle.json, se tiene que inscirbir a la competici\'on en kaggle para poder participar en la competici\'on y verificar por medio de un c\'odigo en el tel\'efono
+
+
+
+\chapter{An\'alisis de datos}
+
+\section{Tricks for Data Science \& Data Analysis}
+\begin{enumerate}
+	\item Remover duplicados de una lista: no utilizar for mejor utilizar set
+	     \begin{verbatim}
+	     	cities = ["Abidjan","Bamako","Dakar","Adibjan", "Dakar"]
+	     	Don't do this 
+	     	Firts Approach
+	     	
+	     	for city in cities:
+	     		if city not in unique_cities:
+	     			unique_cities.append(city)
+	     	print(unique_cities) -> ["Abidjan","Bamako","Dakar"]
+	     	
+	     	Do this
+	     	Second Aproach
+	     	
+	     	unique_cities = list(set(sities))
+	     	print(unique_cities)
+	     \end{verbatim}
+\end{enumerate}
+
+\subsection{Anaconda}
+Contiene un grupo de librer\'ias de python que son Numpy, Scipy, matplotlib, python, pandas, jupyter, scikitLearn, Spyder y para instalar librer\'ias adicionales trae un gestor de paquetes que llama {\bf conda}, podemos hacer la instalaci\'on de keras, TensorFlow, PyTorch.
+
+\url{https://www.anaconda.com/products/distribution}
+
+V\'ideo explicando como instalar anaconda.
+\url{https://www.youtube.com/watch?v=kymjQ6e4jsQ}
+\section{Instalando Python}
+
+\section{instalando TensorFlow}
+
+Para instalar TensorFlow nos podemos guiar de \url{https://www.tensorflow.org/install/pip}
+
+Si ya tienes el entorno virtual instalado y activado solo es ejecutar en el entorno virtual 
+\begin{verbatim}
+	pip install --upgrade pip
+\end{verbatim}
+
+
+
+\section{Instalando Jupyter Notebook}
+Ejecutar Jupyter dentro del entorno virtual, 
+
+\url{https://es.acervolima.com/uso-de-jupyter-notebook-en-un-entorno-virtual/}
+
+Una vez creado el entorno virtual ejecutamos 
+
+abrimos el Jupyter Notebook y procedemos a cambiar el kernel en la opci\'on venv que es como se llamo nuestro kernel, de esta manera podemos acceder a todos los paquetes instalados en nuestro entorno virtual. Para desactivarlo procedemos a ejecutar el siguiente comando: 
+\begin{verbatim}
+	jupyter-kernelspec uninstall venv
+\end{verbatim}
+Esto fue consultado en \cite{JupyterEnviroments}.
+En si solo es cambiar la direcci\'on del kernel.
+
+Pendiente hacer esto mismo en vscode
+
+\chapter{Numpy}
+
+\section{Dimensiones en matrices}
+
+\subsection{0-D Arrays}
+0-D arrays, or scalars, are the elements in a array. Each value in an array is a 0-D array.
+
+\begin{verbatim}
+	import numpy as np
+	
+	arr = np.array(42)
+	
+	print(arr) 
+	
+	ouput()
+			42
+\end{verbatim}
+
+
+\subsection{1-D Arrays}
+An array that has 0-D arrays as its elements is called uni-dimensional or 1-D array.
+
+\begin{verbatim}
+Example
+
+Create a 1-D array containing the values 1,2,3,4,5:
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+print(arr) 
+print(type(arr)) 
+output()
+   [1 2 3 4 5]
+   <class 'numpy.ndarray'>
+\end{verbatim}
+No confundir con una lista de Python son totalmente diferentes.
+
+
+\subsection{2-D Arrays}
+An array that has 1-D arrays as its elements is called a 2-D array.
+
+These are often used to represent matrix or 2nd order tensors.
+
+NumPy has a whole sub module dedicated towards matrix operations called numpy.mat
+
+\begin{verbatim}
+Example
+
+Create a 2-D array containing two arrays with the values 1,2,3 and 4,5,6:
+import numpy as np
+
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+print(arr) 
+\end{verbatim}
+
+
+
+
+\subsection{3-D Arrays}
+An array that has 2-D arrays (matrices) as its elements is called 3-D array.
+
+These are often used to represent a 3rd order tensor.
+
+\begin{verbatim}
+Example
+
+Create a 3-D array with two 2-D arrays, both containing two arrays with the values 1,2,3 and 4,5,6:
+import numpy as np
+
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+
+print(arr) 
+
+output()
+[ [
+  [1 2 3]
+  [4 5 6]
+  ]
+  [
+  [1 2 3]
+  [4 5 6]
+  ]
+]
+\end{verbatim}
+
+
+Check Number of Dimensions?
+
+NumPy Arrays provides the ndim attribute that returns an integer that tells us how many dimensions the array have.
+
+
+\begin{verbatim}
+	Example
+	
+	Check how many dimensions the arrays have:
+	import numpy as np
+	
+	a = np.array(42)
+	b = np.array([1, 2, 3, 4, 5])
+	c = np.array([[1, 2, 3], [4, 5, 6]])
+	d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+	
+	print(a.ndim)
+	print(b.ndim)
+	print(c.ndim)
+	print(d.ndim) 
+	output()
+	0
+	1
+	2
+	3
+\end{verbatim}
+
+Higher Dimensional Arrays
+
+An array can have any number of dimensions.
+
+When the array is created, you can define the number of dimensions by using the ndmin argument.
+
+\begin{verbatim}
+	Example
+	
+	Create an array with 5 dimensions and verify that it has 5 dimensions:
+	import numpy as np
+	
+	arr = np.array([1, 2, 3, 4], ndmin=5)
+	
+	print(arr)
+	print('number of dimensions :', arr.ndim) 
+	
+	output()
+	[[[[[1 2 3 4]]]]]
+	number of dimensions : 5
+\end{verbatim}
+In this array the innermost dimension (5th dim) has 4 elements, the 4th dim has 1 element that is the vector, the 3rd dim has 1 element that is the matrix with the vector, the 2nd dim has 1 element that is 3D array and 1st dim has 1 element that is a 4D array.
+
+\section{Numpy data types}
+
+Data Types in Python
+
+By default Python have these data types:
+
+strings - used to represent text data, the text is given under quote marks. e.g. ``ABCD''
+
+
+integer - used to represent integer numbers. e.g. -1, -2, -3
+
+float - used to represent real numbers. e.g. 1.2, 42.42
+
+boolean - used to represent True or False.
+
+complex - used to represent complex numbers. e.g. 1.0 + 2.0j, 1.5 + 2.5j
+
+Data Types in NumPy
+
+NumPy has some extra data types, and refer to data types with one character, like i for integers, u for unsigned integers etc.
+
+Below is a list of all data types in NumPy and the characters used to represent them.
+
+i - integer\\
+b - boolean\\
+u - unsigned integer\\
+f - float\\
+c - complex float\\
+m - timedelta\\
+M - datetime\\
+O - object\\
+S - string\\
+U - unicode string\\
+V - fixed chunk of memory for other type ( void )\\
+
+
+Shape of an Array
+
+The shape of an array is the number of elements in each dimension.
+
+Get the Shape of an Array
+
+NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding elements.
+
+The shape arrays is return tupla where, first element is 
+
+L aforma de un arreglo 
+
+
+Estudiando de 
+\url{https://www.w3schools.com/python/numpy/numpy_array_join.asp} y python para Data Science
+
+\section{Shape de un arreglo}
+Un array o arreglo de numpy tiene un atributo llamado shape que retorna una tupla donde cada indice tiene el numero correspondiente de elementos, ejemplo: 
+\begin{verbatim}
+	Example
+	
+	Print the shape of a 2-D array:
+	import numpy as np
+	
+	arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+	
+	print(arr.shape) 
+	
+	output: 
+	
+	(2,4)
+	
+	Nos \'indica que tenemos un arreglo de dos elementos de una
+	dimensi\'on y cada elemenos de una dimensi\'on tiene cuatro elementos.
+	
+	import numpy as np
+	
+	arr = np.array([1, 2, 3, 4], ndmin=5)
+	
+	print(arr)
+	print('shape of array :', arr.shape) 
+	import numpy as np
+	
+	arr = np.array([1, 2, 3, 4], ndmin=5)
+	
+	print(arr)
+	
+	print('shape of array :', arr.shape)
+	
+	[[[[[1 2 3 4]]]]]
+	shape of array : (1, 1, 1, 1, 4)
+\end{verbatim}
+
+\section{NumPy Array Reshaping}
+
+Reshaping o reformar un array o arreglo significa cambiar la forma de un array, el shape de un arreglo es el n\'umero de elementos en cada dimenci\'on. Al reshaping podemos agregar o eliminar dimensiones o cambiar el n\'umero de elementos en cada dimensi\'on. 
+
+\subsection{Reshape de 1-D a 2-D}
+
+Ejemplo: 
+
+Convirtamos el siguiente array de  1-D con 12 elementos en un arreglo de 2-D, donde la dimensi\'on 2-D tendra 4 elementos y cada elemento de una dimensi\'on tendra 3 elementos.
+
+\begin{verbatim}
+	import numpy as np
+	
+	arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+	
+	newarr = arr.reshape(4, 3)
+	
+	print(newarr)
+	
+	output:
+	[[ 1  2  3]
+	[ 4  5  6]
+	[ 7  8  9]
+	[10 11 12]]
+\end{verbatim}
+
+Ahora convirtamos el arreglo de 1-D en un arreglo en 3-D, es decir: 
+
+\begin{verbatim}
+	import numpy as np
+	
+	arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+	
+	newarr = arr.reshape(2, 3, 2)
+	
+	print(newarr) 
+	output:
+	
+	import numpy as np
+	
+	arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+	
+	newarr = arr.reshape(2, 3, 2)
+	
+	print(newarr)
+	
+	[[[ 1  2]
+	[ 3  4]
+	[ 5  6]]
+	
+	[[ 7  8]
+	[ 9 10]
+	[11 12]]]
+\end{verbatim}
+
+El elemento retornado tiene la misma direcci\'on de memoria el arreglo original, es decir sucede lo siguiente:
+\begin{verbatim}
+	import numpy as np
+	
+	arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+	
+	newarr = arr.reshape(4, 3)
+	newarr[1][0]=2
+	print(newarr)
+	print(arr)
+	output: 
+	[[ 1  2  3]
+	[ 2  5  6]
+	[ 7  8  9]
+	[10 11 12]]
+	
+	[ 1  2  3  2  5  6  7  8  9 10 11 12]
+\end{verbatim}
+
+Dimensi\'on desconocida
+
+Se le permite tener una dimensi\'on desconocida.
+
+Lo que significa que no tiene que especificar un n\'umero exacto para una de las dimensiones en el m\'etodo de reshape.
+
+Pasa -1 como valor y numpy calcular\'a este n\'umero por usted.
+
+\begin{verbatim}
+	Example
+	
+	Convert 1D array with 8 elements to 3D array with 2x2 elements:
+	import numpy as np
+	
+	arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+	
+	newarr = arr.reshape(2, 2, -1)
+	
+	print(newarr) 
+	[[[1 2]
+	[3 4]]
+	
+	[[5 6]
+	[7 8]]]
+\end{verbatim}
+Note: We can not pass -1 to more than one dimension.
+
+Aplanando los arreglos
+
+Aplanar un arreglo multidimensional significa convertir una matriz multidimensional en una matriz 1D.
+
+podemos usar reshape(-1)
+
+\begin{verbatim}
+	Example
+	
+	Convert the array into a 1D array:
+	import numpy as np
+	
+	arr = np.array([[1, 2, 3], [4, 5, 6]])
+	
+	newarr = arr.reshape(-1)
+	
+	print(newarr) 
+	output:
+	
+	[1 2 3 4 5 6] 
+\end{verbatim}
+\section{M\'etodos}
+
+

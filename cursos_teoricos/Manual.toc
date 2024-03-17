@@ -1,0 +1,26 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {part}{I\hspace {1em}Ciencia de datos}{1}{part.1}%
+\contentsline {section}{\numberline {0.1}Proyectos data Analysis}{2}{section.0.1}%
+\contentsline {chapter}{\numberline {1}An\'alisis de datos}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}?`Qu\'e tipo de informaci\'on podemos analizar?}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Flujo de trabajo en ciencia de datos: fases, roles y oportunidades laborales}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Herramientas para cada etapa del an\'alisis de datos}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Python en ciencia de Datos}{4}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Proyectos}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Credit Card Fraud Detection}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Course Structure \& Outline}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Flavors of Analytics}{6}{section.3.1}%
+\contentsline {part}{II\hspace {1em}Metodolog\'ias}{7}{part.2}%
+\contentsline {chapter}{\numberline {4}CRISP-DM}{8}{chapter.4}%
+\contentsline {part}{III\hspace {1em}Mathematics}{9}{part.3}%
+\contentsline {chapter}{\numberline {5}Probabilidad}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}T\'ecnicas de conteo}{11}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Principio de la multiplicaci\'on}{11}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Principio de la adici\'on}{11}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Permutaciones}{12}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Talleres}{12}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Permutaciones, combinaciones y variaciones}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Conceptos b\'asicos de probabilidad}{13}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Conceptos b\'asicos}{13}{subsection.5.3.1}%
+\contentsline {subsubsection}{Espacio de probabilidad}{13}{section*.3}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliograf\'ia}{14}{Item.28}%

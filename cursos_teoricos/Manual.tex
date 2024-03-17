@@ -1,0 +1,31 @@
+\documentclass[11pt,openany]{book}
+%all packages
+\input{base/packages}
+\input{base/NewCommandMathematics.tex}
+\input{base/relatedStructures.tex}
+%Styles
+\input{base/style}
+%init document
+\begin{document}
+\setlength{\headheight}{6mm}
+\setlength{\parskip}{11pt}
+%Para manipular la identación en los parrafos
+\setlength{\parindent}{0pt}
+\bibliographystyle{plain}
+\makeatletter
+\def\@roman#1{\romannumeral #1}
+\makeatother
+\include{titulo}
+\pagenumbering{roman}
+\frontmatter
+\tableofcontents
+\listoffigures
+\include{resumen}
+\include{intro}
+\pagestyle{plain}
+\mainmatter
+%Part of the documentation
+\import{Develop/}{index.tex}
+\import{Mathematics/}{Index.tex}
+\input{Bibliography/bibliography}
+\end{document}

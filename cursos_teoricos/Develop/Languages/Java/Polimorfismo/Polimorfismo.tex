@@ -1,0 +1,89 @@
+\chapter{Polimorfismo}
+
+\begin{tikzpicture}
+    \begin{class}[text width=6.5cm]{ Funcionario }{0 ,0}
+    \attribute{ nombre : String }
+    \attribute{ documento : string}
+    \attribute{ salario : int}
+    \operation{ getBonificacion() }
+    \end{class}
+\end{tikzpicture}
+
+sqlserver crear tablas el almacen de datos, Donde vas a guardar ese dato? 
+
+
+\section{This y super}
+
+La palabra clave \href{https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html}{\bf this} se refiere al objeto actual en un m\'etodo o constructor. El uso m\'as com\'un de este t\'ermino es eliminar la confusi\'on 
+entre los atributos de clase y los par\'ametros del mismo nombre (porque un atributo de clase est\'a sombreado por un pa\'ametro de m\'etodo o constructor).
+Adem\'as de este uso, esta palabra se puede utilizar para:
+
+\begin{itemize}
+    \item Invoca al constructor de la calse actual;
+    \item Invocar el m\'etodo de clase actual;
+    \item Devuelve el objeto de calse actual;
+    \item Pase un argumento en la llamada al m\'etodo;
+    \item Pase un argumento en la llamada al constructor;
+\end{itemize}
+
+La palabra clave \href{https://docs.oracle.com/javase/tutorial/java/IandI/super.html}{\bf super} se refiere a objetos de superclase (madre). Se utiliza para llamar a los m'etodos de la superclase y para acceder al constructor de la superclase.
+El uso m\'as com\'un de la palabra clase super es eliminar la confuci\'on entre superclases y subclases que tienen m\'etodos con el mismo nombre: 
+
+\begin{description}
+    \item[super: ] 
+    \begin{itemize}
+        \item utilizado para referirse a la variable de instancia de la clase inmediatamente superior (clase madre);
+        \item se usa para invocar m\'etodos de la clase inmediatamente superior.
+    \end{itemize}
+    \item[super(): ] 
+    \begin{itemize}
+        \item se utiliza para invocar el constructor de la calse inmediatamente supeior (clase madre);
+    \end{itemize}
+\end{description}
+
+\section{Sobreescritura}
+
+Vimos que la sobreescritura es un concepto importante de la herencia, proque permite redefinir un comportamiento 
+previsto en la clase madre a tra\'es de la clase hija. Ahora vea la clase vehiculo abajo.
+
+\begin{lstlisting}
+class Vehiculo {
+public  void encender() {
+    
+}
+}
+\end{lstlisting}
+
+y la clase hija carro: 
+
+\begin{lstlisting}
+    class Carro extends Vehiculo {
+        // ????
+    }
+\end{lstlisting}
+
+\section{Modificadores de acceso}
+
+Los modificadores de acceso o accesibilidad son algunas palabras claves utilizadas en el lenguaje Java para definir el nivel de accesiblidad que los elementos de una clase 
+(atributos y m\'etodos) e incluso la propia clase puede tener los mismos elementos de otra clase.
+
+\begin{description}
+    \item[Public: ] Este es modificador menos restictivo de todos. De esta manera, cualquier componente puede acceder a los miembros de la clase, las clases y las interfaces.
+    \item[Protected: ] Al usar este modificador de acceso, los miembros de la case y las clases con accesibles para otros elementos siempre que est\'en dentro del mismo package o, si pertenece a otros packages, siempre que tengan una relaci\'on extendida (herencia), es decir, las clases secundarias peueden acceder a los miembres de su clase principal (o clase de abuelos, etc).
+    \item[Private: ] Este es modificador de acceso m\'as restrictivo de todos. Solo se puede acceder a los miebres definidos como privados desde dentro de la clase y desde ning\'un otro lugar, independientemente del paquete o la herencia. 
+\end{description}
+
+
+\href{https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html}{Referencia en la p\'agina de oracle}
+
+\begin{center}
+    \begin{tabular}[t]{l l}
+      Interfaz                    &     Clase Abstracta\\ \hline
+      Palabra clave: implements   &   	Palabra clase:  extends\\  
+      La interfaz admite herencia m\'ultiple 	  &   La clase abstracta no admite herencia m\'ultiple\\  
+      Proporciona una abstracci\'on absoluta y no puede tener implementaciones de m\'etodos 	  &  Puede tener m\'etodos con implementaciones        \\   
+      La interfaz no contiene constructor 	  & La clase abstracta contiene constructor 	                \\ \hline
+      La interfaz no puede tener modificador de acceso, por defecto todos los accesos son p\'ublicos & La clase abstracta puede tener modifiadore sde acceso\\ \hline
+      Los miembros de la interfaz pueden ser static   & Solo los miembros completamente abstractos pueden ser static \\hline
+    \end{tabular}
+  \end{center}

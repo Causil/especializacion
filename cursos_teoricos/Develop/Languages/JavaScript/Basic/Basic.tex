@@ -1,0 +1,251 @@
+\chapter{Javascript Basic}
+
+\section{JavaScript statements}
+
+
+A computer program is a list of ``instructions'' to be ``executed'' by a computer.
+
+in a programaming language, these programming are called statements.
+
+A javaScript program is a list of programming statements.
+
+in Html, javaScript programs are excuted by the web browser. 
+
+JavaScript statements are composed of: 
+
+\begin{itemize}
+    \item Values
+    \item Operators
+    \item Expressions
+    \item Keywords
+    \item Comments
+\end{itemize}
+This statements tells the browser to write ``Hello Dolly.'' inside an HTML element with id=``demo'';
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>In HTML, JavaScript statements are executed by the browser.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+</script>
+
+</body>
+</html>
+\end{verbatim}
+Most JavaScript programs contain many JavaScript statements. The statements are executed, one by one, in the same operadores
+as they are written.
+
+JavaScript programs (and javaScript statements) are often called JavaScript code.
+
+
+Para que JavaScript detecte que las lineas de c\'odigo de nuestro programa son diferentes se utiliza el semicolons ;
+al final de la expresi\'on o linea de c\'odigo. Para una mejor legibilidad a los programadores a menudo les gusta evitar las l\'ineas de c\'odigo de m\'as de 80 caracteres.
+
+
+Si una declaraci\'on de JavaScript no cabe en una l\'inea, el mejor lugar para dividirla es despu\'es de un operador. 
+
+
+\section{Estructuras del lenguaje}
+\subsection{Declaraciones JavaScript}
+
+Las declaraciones en JavaScript est\'an compuestas de:
+\begin{enumerate}
+    \item Valores.
+    \item Operadores.
+    \item Expresiones.
+    \item Palabras claves.
+    \item Comentarios.
+\end{enumerate}
+
+Por ejemplo: 
+\begin{verbatim}
+    let a, b, c;
+    a = 5;
+    b = 6;
+    c = a + b;
+
+function myFunction() {
+document.getElementById("demo1").innerHTML = "Hello Dolly!";
+document.getElementById("demo2").innerHTML = "How are you?";
+}
+\end{verbatim}
+
+
+JavaScript ignora los multiples espacios. 
+
+
+\subsection{Palabras claves}
+
+Para saber de las palabras claves te invito a visitar el siguiente link \url{https://www.w3schools.com/js/js_reserved.asp}{keywords}.
+
+En general las palabras reservadas son en su mayor\'ia palabras utilizadas por el lenguaje de JavaScript.
+
+\subsection{Valores en JavaScript}
+
+En la sistaxis se definen dos tipos de valores: 
+
+\begin{itemize}
+    \item Valores fijos, llamados literales.
+    \item Valores variables, son llamados variables.
+\end{itemize}
+
+Los n\'umeros decimales, enteros y textos hacen parte de
+
+
+\subsection{Operadores}
+Los diferentes tipos de operadores de JavaScript son: 
+
+\begin{itemize}
+    \item Operadores aritm\'eticos.
+    \item Operadores de asignaci\'on.
+    \item Operadores de comparaci\'on.
+    \item Operadores l\'ogicos.
+    \item Operadores condicionales.
+    \item Operadores de tipo.
+\end{itemize}
+\subsubsection{Operadores aritm\'eticos}
+\begin{flushleft}
+\begin{spacing}{1.7}
+    \begin{tabular}{p{4cm} ll}
+     \textbf{Operador} & \textbf{ Descripci\'on}  \\ % Here the title of your work \\
+	  + & Sumar \\
+	  - & Restar \\
+	  * & Multiplicaci\'on\\
+      ** & Exponenciaci\'on \\
+      / & Divisi\'on \\
+      \% & Modulo\\
+      ++ & Incremento\\
+      -- & Decremento 
+    \end{tabular}
+\end{spacing}
+\end{flushleft}
+
+Ejemplos: 
+
+
+\subsubsection{Operadores Asignaci\'on}
+\begin{flushleft}
+\begin{spacing}{1.7}
+    \begin{tabular}{p{4cm} ll}
+     \textbf{Operador}      & \textbf{ Ejemplo} & \textbf{ Lo mismo} \\ % Here the title of your work \\
+	 $ =$ &       $x = y$       &                     \\
+	 $+=$ &       $x += y$      &      $x = x + y$    \\
+	 $-=$ &       $x -= y$      &      $ x = x - y$   \\
+     $*=$ &       $x *= y$      &      $ x = x * y$   \\
+     $ /$ &       $x /= y$      &      $ x = x / y$   \\
+     $\%=$&       $x \%= y$     &      $ x = x \% y$  \\
+     $**=$ &      $x **= y$     &      $ x = x**y$           
+    \end{tabular}
+\end{spacing}
+\end{flushleft}
+
+\subsubsection{Operadores de comparaci\'on}
+\begin{flushleft}
+\begin{spacing}{1.7}
+    \begin{tabular}{p{4cm} ll}
+     \textbf{Operador}      & \textbf{Descripci\'on}  \\ % Here the title of your work \\
+        $==$  & 	equal to   \\
+        $===$  & 	equal value and equal type   \\
+        $!=$  & 	not equal   \\
+        $!==$  & 	not equal value or not equal type   \\
+        $>$  & 	greater than   \\
+        $<$  & 	less than   \\
+        $>=$  & 	greater than or equal to   \\
+        $<=$  & 	less than or equal to   \\
+        $?$  & 	ternary operator   \\
+    \end{tabular}
+\end{spacing}
+\end{flushleft}
+Ejemplos: 
+
+\begin{verbatim}
+    si consideramos: 
+    let x = 8, y=9;
+    
+    Por consola comparamos podemos obtener de: 
+    x == y --> false
+    x != y --> true
+\end{verbatim}
+
+\subsubsection{Operadores l\'ogicos}
+\begin{flushleft}
+    \begin{spacing}{1.7}
+        \begin{tabular}{p{4cm} ll}
+         \textbf{Operador} & \textbf{Descripci\'on}  \\ % Here the title of your work \\
+         \&\&              &	logical and   \\
+         ||                &	logical or    \\
+         !                 &	logical not   \\
+        \end{tabular}
+    \end{spacing}
+\end{flushleft}
+
+\subsubsection{Operadores de tipo}
+\begin{flushleft}
+    \begin{spacing}{1.7}
+        \begin{tabular}{p{4cm} ll}
+        \textbf{Operador} & \textbf{Descripci\'on}  \\ % Here the title of your work \\
+        typeof            & 	Returns the type of a variable \\
+        instanceof        & 	Returns true if an object is an instance of an object type \\
+        \end{tabular}
+    \end{spacing}
+\end{flushleft}
+
+
+\subsubsection{Bitwise Operators}
+Bit operators work on 32 bits numbers.
+Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.
+\begin{flushleft}
+    \begin{spacing}{1.7}
+        \begin{tabular}{p{4cm} ll}
+      %  \textbf{Operador} & \textbf{Descripci\'on} & \textbf{Ejemplo} & \textbf{Lo mismo} & \textbf{Resultado} & \textbf{Decimal}  \\ % Here the title of your work \\
+      %  \&                & 	AND                    &  	5 \& 1        &	0101 \& 0001 	&   0001 &	1  \\
+      %  \|                 & 	OR                     &  	5 \| 1         &	0101 \| 0001 	&   0101 &	5  \\
+      %  \~                 & 	NOT                    &  	\~ 5           &	 \~0101          &	1010 & 10  \\
+      %  \^                 & 	XOR                    &  	5 \^ 1         &	0101 \^ 0001     &   0100 &	4  \\
+      %  <<                & 	left  shift            &    5 << 1        &	0101 << 1       &	1010 & 10  \\
+      %  >>                & 	right shift            &   	5 >> 1        &	0101 >> 1       &	0010 &  2  \\
+      %  >>>               &  unsigned right shift      &    5 >>> 1       &	0101 >>> 1      &	0010 &	2  \\
+        \end{tabular}
+    \end{spacing}
+\end{flushleft}
+
+\section{Data types}
+
+JavaScript has 8 Datatypes
+
+\begin{itemize}
+    \item String
+    \item Number
+    \item Bigint
+    \item Boolean
+    \item Undefined
+    \item Null
+    \item Symbol
+    \item Object
+\end{itemize}
+
+The Object Datatype, the object data type can contain: 
+
+\begin{itemize}
+    \item An object
+    \item An array
+    \item A date
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+

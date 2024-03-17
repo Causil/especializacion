@@ -1,0 +1,175 @@
+\part{Bases de Datos}
+
+\chapter{MySQL}
+
+\section{Funciones de control de flujo}
+\begin{description}
+	\item[Case: ] Esta expresi\'on nos permite realizar la condici\'on y devolver el primer valor que cumpla con dicha condici\'on
+		\begin{ejemplo}
+			\begin{verbatim}
+				
+			Primer ejemplo
+			
+				select 
+					case 1
+					when 1 then 'uno'
+					when 2 then 'dos'
+					else 'otro n\'umero'
+					end as valor;
+					
+			segundo ejemplo:
+			
+				select idFactura, idProducto,
+				
+				case 
+					when cantidad > 2 then 'M\'as de dos productos vendidos'
+					when cantidad = 2 then 'Dos productos vendidos'
+					else 'Menos de dos productos vendidos'
+				end as cantidad
+				from detalle_factura;
+
+			Tercer ejemplo
+			
+			select nombre,
+			case
+				when email IS NULL then 'No tiene email registrado'
+				else 'email'
+			end as email,
+			pais
+			from cliente;
+			\end{verbatim}
+		Podemos ver que es una sentencia muy similar a switch de vuelve el primer caso que cumpla la condici\'on. 
+		\end{ejemplo}
+	\item[IF :] 
+	\begin{ejemplo}
+		\begin{verbatim}
+
+			Primer ejemplo
+			select if(1 < 2, true, false) as resultado;
+			
+			segundo ejemplo
+			
+			select 
+			idProducto,
+			if(cantidad > 1, cantidad*precioUnitario, precioUnitario) as total
+			from detalle_factura;
+			
+			Tercer ejemplo
+			
+			select
+			nombre,
+			if(fechaIngreso < '2016-12-31', concat(idEmpleado, '-16'),
+				if(fechaIngreso < '2017-12-31', concat(idEmpleado, '-17'),
+					if(fechaIngreso < '2018-12-31', concat(idEmpleado, '-18'),
+						concat(idEmpleado,'-19')
+					  )
+				   )
+			   ) as codigo
+			from empleado;
+			 
+		\end{verbatim}
+	\end{ejemplo}
+	\item[IFNULL y NULLIF:] IFNULL nos permite evaluar una primera expresi\'on, si esta expresi\'on es null, entonces devolver\'a el segundo valor pasado por par\'ametro y NULLIF : 
+	\begin{ejemplo}
+		\begin{verbatim}
+			
+			Primer ejemplo: 
+			
+			select ifnull(null, 'texto') as resultado;
+			
+			Segundo ejemplo: 
+			
+			En este ejemplo devuelve los contactos de la tabla cliente en la
+			columna nombre si tiene email nos da el email pero si este campo
+			es null nos devuelve el tel\'efono
+			
+			select nombre, ifnull(email, telefono) as contacto
+			from cliente;
+			
+			Tercer ejemplo: 
+			
+			select nombre,
+			ifnull( (select email from cliente where idCliente = '14'), 
+			'No tiene eamil registrado' )
+			as email 
+			from cliente
+			where idCliente = '14';
+			
+			select 
+			nullif(
+				(select precioUnitario from producto where idProducto = 1),
+				(select )
+			)
+		\end{verbatim}
+	\end{ejemplo}
+	
+	\item[NULLIF:]
+
+\end{description}
+
+\section{Subqueries}
+Es una declaraci\'on select en otra declaraci\'on, los subqueries devuelven datos de la consulta principal, los subqueries puede ser utilizados para agregar, actualizar, eliminar, enviar datos.
+
+\begin{ejemplo}
+	\begin{verbatim}
+		
+	 Ejemplo n\'umero 1: 
+	 Consiste en traer cuyos empleados tengan mayor salario al promedio: 
+	 
+	 select idEmpleado, nombre, salario
+	 from empleado
+	 where salario > (select avg(salario) from empleado);
+
+	Ejemplo 2: Seleccionamos los empleados que no pertenezcan al departamento general: 
+	
+	select nombre, apelllido, idDepartamento
+	from empleado
+	where idDepartamento NOT IN (select idDepartamento 
+	                             from departamento
+	                             where nombre like "%general%"
+	                              );
+	Ejemplo 3: facturas de los clientes que pertenezacan a Canada o Brasil:
+	
+	select idCliente, idFactura
+	from factura
+	where idCliente IN( select idCliente 
+						from cliente
+						where pais = 'canada' or pais = 'Brasil'
+						 );
+	
+	\end{verbatim}
+\end{ejemplo}
+
+
+Subconsultas: 
+
+\begin{ejemplo}
+	\begin{verbatim}
+		select *
+		from factura
+		where idCliente = (select idCliente form cliente where nombre = 'Jordi');
+		
+		select *
+		from producto 
+		where precioUnitario <= 
+		(select avg(precioUnitario) from producto where idCategoria = 5)
+		and idCategoria = 5;
+		
+		
+	\end{verbatim}
+\end{ejemplo}
+
+comparando subconsultas
+
+Subconsultas: 
+
+\begin{ejemplo}
+	\begin{verbatim}
+		
+		select idProducto, nombre
+		from producto
+		where idProducto = ANY (select idProducto from detalle_factura);
+		
+		
+	\end{verbatim}
+\end{ejemplo}
