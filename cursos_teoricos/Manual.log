@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  17 MAR 2024 11:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  17 MAR 2024 18:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1033,7 +1033,7 @@ LaTeX Info: Redefining \nameref on input line 9.
 \openout2 = `titulo.aux'.
 
 (./titulo.tex
-<images/Logo.png, id=123, 20.23087pt x 20.23087pt>
+<images/Logo.png, id=155, 20.23087pt x 20.23087pt>
 File: images/Logo.png Graphic file (type png)
 <use images/Logo.png>
 Package pdftex.def Info: images/Logo.png  used on input line 10.
@@ -1115,7 +1115,7 @@ LaTeX Info: Redefining \% on input line 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 ...5.1.3}Permutaciones}{12}{subsection.5.1.3}
+l.18 ...pter}{\numberline {8}MySQL}{13}{chapter.8}
                                                   % [1
 
 
@@ -1150,7 +1150,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 No file intro.tex.
-(./Develop/index.tex (./Develop//DataScience/DataScience.tex [1
+(./Develop/index.tex (./Develop//DataScience/index.tex [1
 
 
 
@@ -1158,69 +1158,87 @@ No file intro.tex.
 
 
 
-]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 62.
-
-[2]
+] (./Develop/DataScience/DataScience/DataScience.tex [2]
 Cap\'{\i }tulo 1.
 [3
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 125.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4]
 Cap\'{\i }tulo 2.
-[5
+[4
 
 ]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 120.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [5]
 Cap\'{\i }tulo 3.
-) (./Develop//Metodologia/Crispdm.tex [6
-
-] [7
+[6
 
 ]
 Cap\'{\i }tulo 4.
-)) (./Mathematics/Index.tex [8
+) (./Develop/DataScience/DataEnginer/DataEnginer.tex [7
+
+]
+Cap\'{\i }tulo 5.
+)) (./Develop//Metodologia/Crispdm.tex [8
 
 ] [9
 
-] [10]
-Cap\'{\i }tulo 5.
-(./Mathematics/Combinatorics/Combinatorics.tex [11
-
-] [12]) [13]
+]
 Cap\'{\i }tulo 6.
-(./Mathematics/Probabilidad/index.tex (./Mathematics/Probabilidad/permutacionesCombinacionVaracion.tex) (./Mathematics/Probabilidad/ConceptosBasicos.tex [14
+) (./Develop//DataBase/Sql.tex [10
+
+] [11
+
+]
+Cap\'{\i }tulo 7.
+[12
+
+]
+Cap\'{\i }tulo 8.
+[13
+
+] [14]
+Overfull \hbox (30.37842pt too wide) in paragraph at lines 145--145
+[]\T1/lmtt/m/n/10.95 Ejemplo 2: Seleccionamos los empleados que no pertenezcan al departamento general:[] 
+ []
+
+[15])) (./Mathematics/Index.tex [16] [17
+
+] [18]
+Cap\'{\i }tulo 9.
+(./Mathematics/Combinatorics/Combinatorics.tex [19
+
+] [20]) [21]
+Cap\'{\i }tulo 10.
+(./Mathematics/Probabilidad/index.tex (./Mathematics/Probabilidad/permutacionesCombinacionVaracion.tex) (./Mathematics/Probabilidad/ConceptosBasicos.tex [22
 
 ]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 46.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [15]) (./Mathematics/Probabilidad/VariablesAleatoriasDistribuciones.tex))) (./Bibliography/bibliography.tex [16]) [17
+) [23]) (./Mathematics/Probabilidad/VariablesAleatoriasDistribuciones.tex [24]))) (./Bibliography/bibliography.tex [25]) [26
 
 ] (./Manual.aux (./titulo.aux)
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
  (./resumen.aux) (./intro.aux))
 Package rerunfilecheck Info: File `Manual.out' has not changed.
-(rerunfilecheck)             Checksum: ED40043184DF34932B6D775DF89D985B;5706.
+(rerunfilecheck)             Checksum: 0A79F5B1FCF06F4D814427458925EE98;6822.
  ) 
 Here is how much of TeX's memory you used:
- 32877 strings out of 478287
- 606504 string characters out of 5849289
- 917043 words of memory out of 5000000
- 50220 multiletter control sequences out of 15000+600000
+ 32937 strings out of 478287
+ 607857 string characters out of 5849289
+ 917039 words of memory out of 5000000
+ 50239 multiletter control sequences out of 15000+600000
  560434 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,13n,92p,612b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 89i,13n,92p,665b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Manual.pdf (22 pages, 340716 bytes).
+Output written on Manual.pdf (31 pages, 358720 bytes).
 PDF statistics:
- 459 PDF objects out of 1000 (max. 8388607)
- 391 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
- 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 469 compressed objects within 5 object streams
+ 140 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 

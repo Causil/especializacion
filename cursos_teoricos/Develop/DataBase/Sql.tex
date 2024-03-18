@@ -1,11 +1,16 @@
 \part{Bases de Datos}
+\chapter{Relaciones}
+
+Objetos 
+
+Entidad rectangulos
 
 \chapter{MySQL}
 
 \section{Funciones de control de flujo}
 \begin{description}
 	\item[Case: ] Esta expresi\'on nos permite realizar la condici\'on y devolver el primer valor que cumpla con dicha condici\'on
-		\begin{ejemplo}
+		\begin{example}
 			\begin{verbatim}
 				
 			Primer ejemplo
@@ -39,9 +44,9 @@
 			from cliente;
 			\end{verbatim}
 		Podemos ver que es una sentencia muy similar a switch de vuelve el primer caso que cumpla la condici\'on. 
-		\end{ejemplo}
+		\end{example}
 	\item[IF :] 
-	\begin{ejemplo}
+	\begin{example}
 		\begin{verbatim}
 
 			Primer ejemplo
@@ -68,9 +73,9 @@
 			from empleado;
 			 
 		\end{verbatim}
-	\end{ejemplo}
+	\end{example}
 	\item[IFNULL y NULLIF:] IFNULL nos permite evaluar una primera expresi\'on, si esta expresi\'on es null, entonces devolver\'a el segundo valor pasado por par\'ametro y NULLIF : 
-	\begin{ejemplo}
+	\begin{example}
 		\begin{verbatim}
 			
 			Primer ejemplo: 
@@ -101,7 +106,7 @@
 				(select )
 			)
 		\end{verbatim}
-	\end{ejemplo}
+	\end{example}
 	
 	\item[NULLIF:]
 
@@ -110,7 +115,7 @@
 \section{Subqueries}
 Es una declaraci\'on select en otra declaraci\'on, los subqueries devuelven datos de la consulta principal, los subqueries puede ser utilizados para agregar, actualizar, eliminar, enviar datos.
 
-\begin{ejemplo}
+\begin{example}
 	\begin{verbatim}
 		
 	 Ejemplo n\'umero 1: 
@@ -138,12 +143,12 @@ Es una declaraci\'on select en otra declaraci\'on, los subqueries devuelven dato
 						 );
 	
 	\end{verbatim}
-\end{ejemplo}
+\end{example}
 
 
 Subconsultas: 
 
-\begin{ejemplo}
+\begin{example}
 	\begin{verbatim}
 		select *
 		from factura
@@ -157,13 +162,13 @@ Subconsultas:
 		
 		
 	\end{verbatim}
-\end{ejemplo}
+\end{example}
 
 comparando subconsultas
 
 Subconsultas: 
 
-\begin{ejemplo}
+\begin{example}
 	\begin{verbatim}
 		
 		select idProducto, nombre
@@ -172,4 +177,4 @@ Subconsultas:
 		
 		
 	\end{verbatim}
-\end{ejemplo}
+\end{example}

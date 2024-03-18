@@ -1,6 +1,23 @@
-\subsection{Definiciones y propiedades}
-\begin{definition}{\bf (Variable aleatoria)}
-   Sea $(\Omega, \lm, P)$ un espacio de probabilidad. Una variable aleatoria es una funci\'on $X\colon \Omega \to \mathbb{R}$ 
-   tal que, para toda $A\in B$, $X^{-1}(A)\in \lm$, donde $B$ es la $\sigma$-\'algebra de Borel.sobre $\R$.
+\subsection{DEFINITIONS AND PROPERTIES}
+\begin{definition}{\bf (Random Variable)}
+   Let $(\Omega, \lm, P)$ be a probability space. A (real) random variable is a mapping $X\colon \Omega \to \mathbb{R}$
+   such that, for all $A\in B$, $X^{-1}(A)\in \lm$, where $B$ is the Borel $\sigma$-\'algebra over $\R$.
 \end{definition}
 
+\begin{definition}{\bf (Distribution Function)}
+   Let $X$ be a real random variable. The function $F_{X}$ defined over $\R$ through
+   \begin{align}
+      F_{X}(x) = P(X\leq x) = P(\{\omega\in \Omega\colon X(\omega)\leq x\})
+   \end{align}
+   is called the distribution function of $X$ (or cumulative distribution function (cdf)) of the random variable $X$.
+\end{definition}
+
+
+\begin{theorem}
+   Let $X$ be a real random variable defined over $(\Omega, \lm, P)$. The distribution function 
+   $F_{X}$ satisfies the following conditions: 
+   \begin{enumerate}[{\rm i.}]
+      \item If $x<y$, then $F_{X}(x)\leq F_{X}(y)$.
+      \item $F_{X}(x^{+}) \colon = 1 - F_{X}(x^{-})$.
+   \end{enumerate}
+\end{theorem}

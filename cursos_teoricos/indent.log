@@ -1,11 +1,11 @@
 INFO:  latexindent version 3.15, 2022-01-21, a script to indent .tex files
        latexindent lives here: /usr/share/texlive/texmf-dist/scripts/latexindent/
-       Wed Feb 21 18:30:45 2024
-       Filename: /home/javier/Documentos/Javier/MiPregradoDeVida/MatemÃ¡ticas/Latex/Mathematics/CalculoDiferencial/__latexindent_temp_CalculoDiferencial.tex
+       Sun Mar 17 18:11:41 2024
+       Filename: /home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/cursos_teoricos/Mathematics/Probabilidad/__latexindent_temp_VariablesAleatoriasDistribuciones.tex
 INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
        -c|--cruft: cruft directory
-INFO:  Directory for backup files and /home/javier/Documentos/Javier/MiPregradoDeVida/MatemÃ¡ticas/Latex//indent.log: /home/javier/Documentos/Javier/MiPregradoDeVida/MatemÃ¡ticas/Latex/
+INFO:  Directory for backup files and /home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/cursos_teoricos//indent.log: /home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/cursos_teoricos/
 INFO:  YAML settings read: defaultSettings.yaml
        Reading defaultSettings.yaml from /usr/share/texlive/texmf-dist/scripts/latexindent/defaultSettings.yaml
 INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml
@@ -13,9 +13,9 @@ INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml
        To specify user settings you would put indentconfig.yaml here: /home/javier/indentconfig.yaml
        Alternatively, you can use the hidden file .indentconfig.yaml as: /home/javier/.indentconfig.yaml
 INFO:  YAML settings read: -y switch
-       YAML setting: defaultIndent:'    '
-       single-quoted string found in -y switch: '    ', substitute to     
-       Updating mainSettings with defaultIndent:     
+       YAML setting: defaultIndent:'   '
+       single-quoted string found in -y switch: '   ', substitute to    
+       Updating mainSettings with defaultIndent:    
 INFO:  Phase 1: searching for objects
 INFO:  Phase 2: finding surrounding indentation
 INFO:  Phase 3: indenting objects
