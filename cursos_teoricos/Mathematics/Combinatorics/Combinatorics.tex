@@ -20,8 +20,8 @@
 \subsection{Addition Principle}
 
 \begin{definition}{\bf (Addition Principle.)}
-    Suppose that a set $S$ is partitioned into pairwise disjoint parts $S_1, S_2, \ldots , S_n$. The number the 
-    of objects in $S$ can be determined by finding the number of objects un each of the parts, and adding the 
+    Suppose that a set $S$ is partitioned into pairwise disjoint parts $S_1, S_2, \ldots , S_n$. The number the
+    of objects in $S$ can be determined by finding the number of objects un each of the parts, and adding the
     number so obtained:
     \begin{align}
         |S| = |S_1| + |S_2| + \ldots + |S_n|.
@@ -32,7 +32,7 @@
 \begin{example}
     \hspace{0mm}
     \begin{enumerate}
-        \item 
+        \item
     \end{enumerate}
 \end{example}
 
@@ -50,6 +50,48 @@
     task has $p$ outcomes and, no matter what the outcome of the first task, a second task
     has $q$ outcomes, then the two tasks performed consecutively have $p \times q$ outcomes.
 \end{definition}
+
+
+\subsection{Subtration Principle}
+
+\begin{definition}{\bf Subtraction Principle}
+    Let $A$ be a set and let $U$ be a larger ser containing $A$. Let 
+    $$ \overset{\_}{A} = U\setminus A = \{x\in U| x\notin A\}$$
+    be the complement of $A$ in $U$. Then the number $|A|$  of objects in $A$ is given by the rule 
+    $$ |A| = |U| - |\overset{\_}{A}|.$$
+    In applying the subtraction principle, the set $U$ is usually some natural set sisting of all the objects under 
+    discussion(the so-called universal set). Using the subtraction principle makes sense only if it is easier to count 
+    the number of objects in $U$ and in $\overset{\_}{A}$ than to count the number og objects in $A$.
+\end{definition}
+
+\subsection{Division Principle}
+
+\begin{definition}{\bf Division Principle}
+    Let $S$ be a finite set that is partitioned into $k$ parts in such a way that each part contains the same number of objects. Then the number 
+    of parts in the partition is given by the rule
+    $$ k = \frac{|S|}{\text{number of objects in a part}}.$$
+    Thus, we can determine the number of parts if we know the number of objects in $S$ and the common value 
+    of the number of objects in the parts.
+\end{definition}
+
+\subsection{PERMUTATIONS OF SETS}
+Let $r$ be a positive integer, by an $r$-permutation of a set $S$ of $n$ elements, we understand an ordered arrangement of $r$ 
+of the $n$ elements. 
+
+We denote by $P(n,r)$ the number of $r$-permutations of an $n$-element set. 
+
+\begin{theorem}
+    For $n$ and $r$ positive integers with $r\leq n$, 
+    \begin{align}
+        P(n,r) = n(n-1)(n-2)\cdots(n-r+1) = \frac{n!}{(n-r)!}.
+    \end{align}
+    \begin{proof}
+        $P(n,r) =  \underset{r-times}{\text{\_ \_ \_} \ldots\text{ \_ \_ \_ }}$
+    \end{proof}
+\end{theorem}
+
+
+
 \subsection{Principio de la adici\'on}
 Si un suceso $S_{1}$  ocurre de $a$ maneras y un suceso $S_{2}$ ocurre de $b$ maneras entonces puede decirse que el n\'umero total de maneras en que puede
 ocurrir $S_1$ o el suceso $S_2$ es $a+b$.
@@ -59,17 +101,16 @@ ocurrir $S_1$ o el suceso $S_2$ es $a+b$.
     \hspace{0mm}
     \begin{enumerate}[{\rm 1}]
         \item {\bf Ejemplo 1:}  ?`Cu\'antos resultados diferentes se pueden obtener lanzando un dado o una moneda?
-        Indetificamos que el experimento consiste en elegir que objeto lanzar, suponga:
-        $$ S_1\colon = \text{ lanzar el dado } \text{ y } S_2 \colon = \text{ lanzar la moneda. }$$
-        Si se elije el dado, entonces el n\'umero de resultados posibles es $\{1,2,3,4,5,6\}$ o 
-        si elige la moneda el n\'umero de resultados posibles es $\{C,S\}$. 
-        As\'i el n\'umero total de resultados posibles para el suceso $S_1$ o $S_2$ es: $$6+2=8$$.
+              Indetificamos que el experimento consiste en elegir que objeto lanzar, suponga:
+              $$ S_1\colon = \text{ lanzar el dado } \text{ y } S_2 \colon = \text{ lanzar la moneda. }$$
+              Si se elije el dado, entonces el n\'umero de resultados posibles es $\{1,2,3,4,5,6\}$ o
+              si elige la moneda el n\'umero de resultados posibles es $\{C,S\}$.
+              As\'i el n\'umero total de resultados posibles para el suceso $S_1$ o $S_2$ es: $$6+2=8$$.
         \item {\bf Ejemplo 2:}  ?`Cu\'antos resultados diferentes se pueden obtener lanzando un dado y una moneda?
-        Considerando los mismo sucesos $S_1$ y $S_2$ del ejemplo anterior, el experimiento consiste en lanzar un dado y seguidamente lanzar una moneda.
-        nuestro conjunto de resultados ser\'ia
-        $$ \{ {(1,C), (1,S)}, (2,C), (2,S), \ldots, (6,C), (6,S) \}. $$
-        As\'i la cantidad de sucesos es $6\cdot2 = 12.$
-        
+              Considerando los mismo sucesos $S_1$ y $S_2$ del ejemplo anterior, el experimiento consiste en lanzar un dado y seguidamente lanzar una moneda.
+              nuestro conjunto de resultados ser\'ia
+              $$ \{ {(1,C), (1,S)}, (2,C), (2,S), \ldots, (6,C), (6,S) \}. $$
+              As\'i la cantidad de sucesos es $6\cdot2 = 12.$
     \end{enumerate}
 \end{example}
 
@@ -80,25 +121,24 @@ ocurrir $S_1$ o el suceso $S_2$ es $a+b$.
     de $n_{1}\cdot n_{2}\cdot\ldots\cdot n_{k}$ maneras.
 \end{definition}
 
-
 \subsection{Permutaciones}
 
 ?`De cu\'antas formas se pueden ordenar u organizar los elementos de un conjunto o de un subconjunto? Para responder tal pregunta, realicemos
-las siguientes definiciones. 
+las siguientes definiciones.
 \begin{definition}
     \hspace{0.5mm}
-    \begin{enumerate}[{\rm 1.}]        
+    \begin{enumerate}[{\rm 1.}]
         \item {\rm Ordenar: } significa poner una cantidad de elementos en un orden espec\'ifico que obedece a una regla l\'ogica.
-        \item {\rm Organizar: } implica poner una cantidad de elementos de forma que no tienen un orden espec\'ifico o dicho orden no es importante 
-        dentro de un determinado contexto.
-        \item {\rm Conjunto: } 
-        \item {\rm Subconjunto: } 
-        \item {\rm Orden: } corresponde a la aplicaci\'on de un criterio espec\'ifico que le confiere cierta jerarqu\'ia a los elementos que forman parte de un conjunto. 
-        
+        \item {\rm Organizar: } implica poner una cantidad de elementos de forma que no tienen un orden espec\'ifico o dicho orden no es importante
+              dentro de un determinado contexto.
+        \item {\rm Conjunto: }
+        \item {\rm Subconjunto: }
+        \item {\rm Orden: } corresponde a la aplicaci\'on de un criterio espec\'ifico que le confiere cierta jerarqu\'ia a los elementos que forman parte de un conjunto.
+
     \end{enumerate}
 \end{definition}
 
-Definimos lso conceptos de permutaci\'on y combinaci\'on: 
+Definimos lso conceptos de permutaci\'on y combinaci\'on:
 
 \begin{definition}{Permuatci\'on}
 
@@ -111,7 +151,7 @@ Definimos lso conceptos de permutaci\'on y combinaci\'on:
 %     {\bf Soluci\'on:} 
 %     Suceso:\\ $S_1\colon=$ formar una placa de auto eligiendo una letra del abcdario sin repetir y elegir un n\'umeros del $1$ al $10$.
 
-    
+
 %     Sabemos que las letras del abcedario son 27, aplicando el principio de la multiplicaci\'on, el n\'umero de placas posibles es:
 %     $$ 27\cdot26\cdot25\cdot10\cdot10\cdot10= 17550000 $$
 

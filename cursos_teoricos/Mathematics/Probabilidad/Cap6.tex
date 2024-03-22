@@ -1,0 +1,21 @@
+
+\subsection{Funci\'n de densidad condicional}
+La relaci\'on entre dos varaibles aleatorias puede verse hallando la distribuci\'on condicional de una de ellas, 
+dado el valor de la otra.
+
+\begin{definition}{\bf funci\'on de densidad condicional v.a discretas}
+Sean $X$ e $Y$ variables aleatorias discretas. Se define la funci\'on de densidad de probilidad condicional de 
+$X$ dado $Y=y$
+\begin{align*}
+    f_{X|Y}(x|y)\colon =P(X=x|Y=y) = \frac{P(X=x,Y=y)}{P(Y=y)};
+\end{align*}
+\end{definition}
+
+para todos los $y$ para los cuales $P(Y=y)>0$.
+
+\begin{definition}{\bf (funci\'on de dustribuci\'on condicional v.a discretas)}
+La funci\'on de distribuci\'on condicional de $X$ dado $Y=y$ se define como:
+    \begin{align*}
+        F_{X|Y}(x|y)\colon =P(X\leq x|Y=y) = \sum_{k\leq x} f_{X|Y}(k|y);
+    \end{align*}
+para todos los $y$ para los cuales $P(Y=y)>0$.
