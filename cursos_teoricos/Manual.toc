@@ -41,4 +41,13 @@
 \contentsline {subsection}{\numberline {10.3.1}DEFINITIONS AND PROPERTIES}{25}{subsection.10.3.1}%
 \contentsline {section}{\numberline {10.4}Probabilidad condicional y esperanza condicional}{26}{section.10.4}%
 \contentsline {subsection}{\numberline {10.4.1}Funci\'n de densidad condicional}{26}{subsection.10.4.1}%
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{26}{proposition.10.4.2}%
+\contentsline {chapter}{\numberline {11}Estad\'istica}{27}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Estimaci\'on e inferencia estad\'istica}{27}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Pruebas de hipotesis}{27}{subsection.11.1.1}%
+\contentsline {section}{\numberline {11.2}Regresi\'on}{27}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1} Regresi\'ion lineal simple }{27}{subsection.11.2.1}%
+\contentsline {chapter}{\numberline {12}Aprendizaje autom\'atico 1}{28}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Unidad 1}{29}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Introducci\'on y fundamentos del aprendizaje autom\'atico}{29}{subsection.12.1.1}%
+\contentsline {subsubsection}{Metodolog\'ias}{29}{section*.4}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{30}{Item.42}%

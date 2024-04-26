@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  21 MAR 2024 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  23 APR 2024 07:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -926,7 +926,8 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count407
 \l__pdf_internal_box=\box151
-) (./Manual.aux)
+)
+No file Manual.aux.
 \openout1 = `Manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -947,7 +948,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count408
 \scratchdimen=\dimen333
@@ -1213,7 +1214,15 @@ LaTeX Warning: Citation `Brualdi2009' on page 23 undefined on input line 1.
 LaTeX Font Info:    Trying to load font information for U+euf on input line 46.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [24]) (./Mathematics/Probabilidad/VariablesAleatoriasDistribuciones.tex [25]) (./Mathematics/Probabilidad/Cap6.tex))) (./Bibliography/bibliography.tex [26]) [27
+) [24]) (./Mathematics/Probabilidad/VariablesAleatoriasDistribuciones.tex [25]) (./Mathematics/Probabilidad/Cap6.tex)) [26]
+Cap\'{\i }tulo 11.
+(./Mathematics/Estatistics/index.tex (./Mathematics/Estatistics/EstimacionEinferencia.tex) (./Mathematics/Estatistics/Regresion.tex)) [27
+
+]
+Cap\'{\i }tulo 12.
+(./Mathematics/AprendizajeAutomatico1/index.tex (./Mathematics/AprendizajeAutomatico1/unidad1.tex [28
+
+]))) (./Bibliography/bibliography.tex [29] [30]) [31
 
 ]
 
@@ -1246,25 +1255,25 @@ Package rerunfilecheck Warning: File `Manual.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `Manual.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D53FF3FAC2C572A3DA4C9B323E056B5B;7856.
+(rerunfilecheck)             After:  7233E9CF9808EB41BE047355FA715154;9315.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 16 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32894 strings out of 478287
- 607448 string characters out of 5849289
- 914499 words of memory out of 5000000
- 50197 multiletter control sequences out of 15000+600000
- 557409 words of font info for 90 fonts, out of 8000000 for 9000
+ 33040 strings out of 478287
+ 610632 string characters out of 5849289
+ 914507 words of memory out of 5000000
+ 50300 multiletter control sequences out of 15000+600000
+ 557774 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,13n,92p,665b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Manual.pdf (32 pages, 333587 bytes).
+ 89i,13n,92p,665b,705s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Manual.pdf (36 pages, 340121 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
- 152 named destinations out of 1000 (max. 500000)
+ 452 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
+ 177 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
