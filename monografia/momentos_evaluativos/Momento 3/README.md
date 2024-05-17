@@ -7,7 +7,7 @@
 
 2. Corra todo el Google Colab
 
-Exploration and Preparation
+## Exploration and Preparation
 
 Descripción de la Actividad 1. 
 Cada grupo deberá describir detalladamente los datos originales disponibles para su proyecto, incluyendo formatos, distribución de los datos, descripción de las columnas, y cualquier etiquetado disponible
