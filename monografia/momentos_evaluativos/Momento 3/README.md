@@ -1,5 +1,16 @@
 # Título del Proyecto Seminario de Analítica y Ciencia de Datos ACT02 - Towards Data 
 
+## Como ejecutar los scripts
+
+1. Descargue el archivo funciones.py en el repositorio "Momento 3" [especializacion/monografia momentos_evaluativos/Momento 3/utils/funciones.py](https://github.com/Causil/especializacion/blob/main/monografia/momentos_evaluativos/Momento%203/utils/funciones.py)
+2. Abra el siguiente enlace para cargar el notebook desde Google Colab:
+[Collaboratory](https://colab.research.google.com/github/Causil/especializacion/blob/main/
+monografia/momentos_evaluativos/Momento%203/ME03-G10-%5B1038129159%5D-%5B98761437%5D.ipynb) 
+
+3. Agregue el archivo funciones.py al entorno de directorios del Google Colab abierto en el segundo paso.
+
+4. Corra todo el Google Colab
+
 Exploration and Preparation
 
  Descripción de la Actividad 1. 
@@ -14,5 +25,3 @@ Se dispone de dos fuentes de datos:
     - Energía Activa Generación (kWh)
     - Energía Reactiva Inductiva (kVarh)
     - Energía Reactiva Capacitiva (kVarh)
-
-Preparación de los datos:
