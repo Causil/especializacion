@@ -36,3 +36,4 @@ with doc.create(Section('Wrapping Latex Environments')):
 
 # Generate pdf
 doc.generate_pdf('environment_ex', clean_tex=False)
+
