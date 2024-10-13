@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  7 JUN 2024 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  13 OCT 2024 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/cursos_teoricos/Manual.tex
-(/home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/cursos_teoricos/Manual.tex
+**/home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/monografia/LaTex/index.tex
+(/home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/monografia/LaTex/index.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
@@ -905,6 +905,17 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 ) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box151
+\beforetitleunit=\skip86
+\aftertitleunit=\skip87
+\ttl@plus=\dimen333
+\ttl@minus=\dimen334
+\ttl@toksa=\toks55
+\titlewidth=\dimen335
+\titlewidthlast=\dimen336
+\titlewidthfirst=\dimen337
 ) (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
@@ -916,21 +927,20 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 \c@exercise=\count403
 \c@exercises=\count404
 \c@observation=\count405
-)
 \c@consequence=\count406
- (./base/style.tex)
+) (./base/style.tex)
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 9.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count407
-\l__pdf_internal_box=\box151
-) (./Manual.aux (./titulo.aux)
+\l__pdf_internal_box=\box152
+) (./index.aux (./titulo.aux)
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- (./resumen.aux) (./intro.aux))
-\openout1 = `Manual.aux'.
+ (./resumen.aux))
+\openout1 = `index.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -953,16 +963,16 @@ LaTeX Font Info:    ... okay on input line 9.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count408
-\scratchdimen=\dimen333
-\scratchbox=\box152
+\scratchdimen=\dimen338
+\scratchbox=\box153
 \nofMPsegments=\count409
 \nofMParguments=\count410
-\everyMPshowfont=\toks55
+\everyMPshowfont=\toks56
 \MPscratchCnt=\count411
-\MPscratchDim=\dimen334
+\MPscratchDim=\dimen339
 \MPnumerator=\count412
 \makeMPintoPDFobject=\count413
-\everyMPtoPDFconversion=\toks56
+\everyMPtoPDFconversion=\toks57
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -991,9 +1001,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
 LaTeX Info: Redefining \nameref on input line 9.
- (./Manual.out) (./Manual.out)
+ (./index.out) (./index.out)
 \@outlinefile=\write4
-\openout4 = `Manual.out'.
+\openout4 = `index.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1033,60 +1043,57 @@ LaTeX Info: Redefining \nameref on input line 9.
 \openout2 = `titulo.aux'.
 
 (./titulo.tex
-<images/Logo.png, id=99, 20.23087pt x 20.23087pt>
+<images/Logo.png, id=26, 313.17pt x 150.5625pt>
 File: images/Logo.png Graphic file (type png)
 <use images/Logo.png>
-Package pdftex.def Info: images/Logo.png  used on input line 10.
-(pdftex.def)             Requested size: 142.26378pt x 142.34846pt.
+Package pdftex.def Info: images/Logo.png  used on input line 7.
+(pdftex.def)             Requested size: 142.26378pt x 68.39806pt.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 10--11
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 7--8
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 11.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 11.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 11.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 8.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 11.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 8.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 11.
+(Font)              <10.95> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 11.
+(Font)              <8> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 11.
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 11.
+(Font)              <6> on input line 8.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 49.
- (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
-File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
-)
-LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 50.
- (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
-File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
-)) [1
+Overfull \hbox (50.7589pt too wide) in paragraph at lines 13--13
+ [][] 
+ []
+
+) [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -1097,8 +1104,6 @@ Non-PDF special ignored!
 <special> header=pst-dots.pro
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
 
 Non-PDF special ignored!
 <special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
@@ -1109,32 +1114,30 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:0.8 setlinewidth 0 setgray
 
- <./images/Logo.png>] (./Manual.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/Logo.png>] (./index.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write5
+\openout5 = `index.toc'.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...{\numberline {8}Relaciones}{14}{chapter.8}
-                                                  % [1
+l.22 \listoffigures
+                    [1
 
 
 
 
-])
-\tf@toc=\write5
-\openout5 = `Manual.toc'.
-
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
- [2] (./Manual.lof
+] (./index.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write6
-\openout6 = `Manual.lof'.
+\openout6 = `index.lof'.
 
- [3
+ [2
 
 ]
 \openout2 = `resumen.aux'.
@@ -1143,92 +1146,50 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [4
+)) [3
 
-]
-\openout2 = `intro.aux'.
-
-
-No file intro.tex.
-(./Develop/index.tex (./Develop//DataScience/index.tex [1
+] [4
 
 
 
-
-
-
-
-] (./Develop/DataScience/DataScience/DataScience.tex [2]
+] (./Contents/main.tex
 Cap\'{\i }tulo 1.
-[3
+(./Contents//description/chapters.tex) [1
 
 ]
 Cap\'{\i }tulo 2.
-[4
+(./Contents//Objetivos/chapters.tex) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 120.
+Cap\'{\i }tulo 3.
+(./Contents//datos/chapters.tex)) (./Bibliography/bibliography.tex [3
+
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [5]
-Cap\'{\i }tulo 3.
-[6
+)) [4
 
-]
-Cap\'{\i }tulo 4.
-) (./Develop/DataScience/DataEnginer/DataEnginer.tex [7
-
-]
-Cap\'{\i }tulo 5.
-) (./Develop/DataScience/BigData/BigData.tex [8
-
-]
-Cap\'{\i }tulo 6.
-[9
-
-])) (./Develop//Metodologia/Crispdm.tex [10] [11
-
-]
-Cap\'{\i }tulo 7.
-) (./Develop//DataBase/Sql.tex [12
-
-] [13
-
-]
-Cap\'{\i }tulo 8.
-[14
-
-]
-Cap\'{\i }tulo 9.
-[15
-
-] [16]
-Overfull \hbox (30.37842pt too wide) in paragraph at lines 145--145
-[]\T1/lmtt/m/n/10.95 Ejemplo 2: Seleccionamos los empleados que no pertenezcan al departamento general:[] 
- []
-
-[17]) (./Develop//AprendizajeAutomatico1/index.tex (./Develop/AprendizajeAutomatico1/unidad1.tex [18]))) (./Bibliography/bibliography.tex [19] [20]) [21
-
-] (./Manual.aux (./titulo.aux)
+] (./index.aux (./titulo.aux)
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- (./resumen.aux) (./intro.aux))
-Package rerunfilecheck Info: File `Manual.out' has not changed.
-(rerunfilecheck)             Checksum: BF38DD07058B29027DA23D5A03DC862A;4013.
+ (./resumen.aux))
+Package rerunfilecheck Info: File `index.out' has not changed.
+(rerunfilecheck)             Checksum: 2C79F5264AF3F9A36EEA37C4153D6D2E;586.
  ) 
 Here is how much of TeX's memory you used:
- 32910 strings out of 478287
- 607515 string characters out of 5849289
- 913024 words of memory out of 5000000
- 50277 multiletter control sequences out of 15000+600000
- 546956 words of font info for 79 fonts, out of 8000000 for 9000
+ 32901 strings out of 478287
+ 605490 string characters out of 5849289
+ 913426 words of memory out of 5000000
+ 50386 multiletter control sequences out of 15000+600000
+ 521897 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,8n,92p,665b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Manual.pdf (26 pages, 295606 bytes).
+ 89i,8n,92p,521b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on index.pdf (9 pages, 207301 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 321 compressed objects within 4 object streams
- 94 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

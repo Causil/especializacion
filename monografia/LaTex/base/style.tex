@@ -1,0 +1,97 @@
+% style sheet for the thesis
+% Chapter and section title format
+%\titleformat{\section}[block]{\normalfont\huge\bfseries}{\thesection.}{.5em}{\Huge}[{}]
+% \titlespacing*{\chapter}{0pt}{-19pt}{25pt}
+% \titleformat{\section}[block]{\normalfont\Large\bfseries}{\thesection.}{.5em}{\Large}
+
+
+
+% code formatting with listing
+%\lstset{
+%  basicstyle=\ttfamily,
+%  breaklines=true,
+%}
+
+% Margins
+\geometry{
+    a4paper,
+    margin=2.75cm
+}
+
+% Index depth limit
+\setcounter{tocdepth}{2}
+
+% Paragraph Indentation
+\setlength{\parindent}{1cm}
+
+%\renewcommand{\lstlistingname}{Code extraction}
+%\renewcommand*{\lstlistlistingname}{Code Excerpts Index}
+
+\definecolor{US_red}{cmyk}{0, 1, 0.65, 0.34}
+\definecolor{US_yellow}{cmyk}{0, 0.3, 0.94, 0}
+
+
+%------------configurando el entorno de presentaci\'on de c\'odigo
+\lstset{
+        tabsize=2, % tab = 2 espacios
+        backgroundcolor=\color[HTML]{F0F0F0}, % color de fondo
+        captionpos=b, % posición de pie de código, b=debajo
+        basicstyle=\ttfamily, % estilo de letra general
+        columns=fixed, % columnas alineadas
+        extendedchars=true, % ASCII extendido
+        breaklines=true, % partir líneas
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}}, % marcar final de línea con flecha
+        showtabs=false, % no marcar tabulación
+        showspaces=false, % no marcar espacios
+        keywordstyle=\bfseries\color[HTML]{007020}, % estilo de palabras clave
+        commentstyle=\itshape\color[HTML]{60A0B0}, % estilo de comentarios
+        stringstyle=\color[HTML]{4070A0}, % estilo de strings
+}
+
+\lstdefinestyle{abaqusPython}{
+        language=python,
+		% Palabras clave extra
+        morekeywords={CONTINUOUS,NUMBER,MESH,par,name,ParStudy,
+		template,define,sample,combine, generate},
+		% Delimitadores extra, s porque hay uno a cada lado
+        moredelim=[s][\ttfamily\color{magenta}]{<}{>},
+}
+
+\lstdefinestyle{abaqusJava}{
+        language=python,
+		% Palabras clave extra
+        morekeywords={CONTINUOUS,NUMBER,MESH,par,name,ParStudy,
+		template,define,sample,combine, generate},
+		% Delimitadores extra, s porque hay uno a cada lado
+        moredelim=[s][\ttfamily\color{magenta}]{<}{>},
+}
+
+\lstset{literate=
+  {á}{{\'a}}1
+  {é}{{\'e}}1
+  {í}{{\'i}}1
+  {ó}{{\'o}}1
+  {ú}{{\'u}}1
+  {Á}{{\'A}}1
+  {É}{{\'E}}1
+  {Í}{{\'I}}1
+  {Ó}{{\'O}}1
+  {Ú}{{\'U}}1
+  {ñ}{{\~n}}1
+  {ü}{{\"u}}1
+  {Ü}{{\"U}}1
+}
+
+\definecolor{bluedistri}{RGB}{59, 160, 242}
+\definecolor{orangedistri}{RGB}{250, 112, 56}
+%------------configurando el entorno de presentaci\'on de c\'odigo
+
+
+%\mdfdefinestyle{US_style}{backgroundcolor=US_yellow!20, font=\bfseries, hidealllines=true}
+
+%%%%%%%%%%%%%%%% Para margenes %%%%%%%%%%%
+\hfuzz=20pt
+\vfuzz=20pt
+\hbadness=2000
+\vbadness=\maxdimen
+%-----------------------------------------%
