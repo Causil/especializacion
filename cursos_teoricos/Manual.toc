@@ -11,15 +11,35 @@
 \contentsline {chapter}{\numberline {4}Course Structure \& Outline}{7}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Flavors of Analytics}{7}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Ingeniero de datos}{8}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Big-Data}{9}{chapter.6}%
-\contentsline {part}{II\hspace {1em}Metodolog\'ias}{11}{part.2}%
-\contentsline {chapter}{\numberline {7}CRISP-DM}{12}{chapter.7}%
-\contentsline {part}{III\hspace {1em}Bases de Datos}{13}{part.3}%
-\contentsline {chapter}{\numberline {8}Relaciones}{14}{chapter.8}%
-\contentsline {chapter}{\numberline {9}MySQL}{15}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Funciones de control de flujo}{15}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Subqueries}{17}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Unidad 1}{19}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Introducci\'on y fundamentos del aprendizaje autom\'atico}{19}{subsection.9.3.1}%
-\contentsline {subsubsection}{Metodolog\'ias}{19}{section*.3}%
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{20}{Item.36}%
+\contentsline {section}{\numberline {5.1}M\'odulo 1}{8}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Problemas con datos}{8}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Falta de datos}{9}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Muy pocos datos}{9}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Datos incorrectos, incluidos los datos con errores}{10}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}El tama\~no de la muestra}{10}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Big-Data}{12}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Roles}{13}{section.6.1}%
+\contentsline {part}{II\hspace {1em}Metodolog\'ias}{15}{part.2}%
+\contentsline {chapter}{\numberline {7}CRISP-DM}{16}{chapter.7}%
+\contentsline {part}{III\hspace {1em}Bases de Datos}{17}{part.3}%
+\contentsline {chapter}{\numberline {8}Relaciones}{18}{chapter.8}%
+\contentsline {chapter}{\numberline {9}MySQL}{19}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Funciones de control de flujo}{19}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Subqueries}{21}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Unidad 1}{23}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Introducci\'on y fundamentos del aprendizaje autom\'atico}{23}{subsection.9.3.1}%
+\contentsline {subsubsection}{Metodolog\'ias}{23}{section*.3}%
+\contentsline {part}{IV\hspace {1em}Mathematics}{25}{part.4}%
+\contentsline {chapter}{\numberline {10}Combinatorics}{27}{chapter.10}%
+\contentsline {section}{\numberline {10.1} Four Basic Counting Principles }{27}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Addition Principle}{27}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Multiplication Principle}{28}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Subtration Principle}{28}{subsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.1.4}Division Principle}{28}{subsection.10.1.4}%
+\contentsline {subsection}{\numberline {10.1.5}PERMUTATIONS OF SETS}{28}{subsection.10.1.5}%
+\contentsline {subsection}{\numberline {10.1.6}Principio de la adici\'on}{29}{subsection.10.1.6}%
+\contentsline {subsection}{\numberline {10.1.7}Principio de la multiplicaci\'on}{29}{subsection.10.1.7}%
+\contentsline {subsection}{\numberline {10.1.8}Permutaciones}{29}{subsection.10.1.8}%
+\contentsline {part}{V\hspace {1em}An\'alisis de series temporales}{31}{part.5}%
+\contentsline {chapter}{\numberline {11}Introducci\'on a las series temporales}{32}{chapter.11}%
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{33}{Item.76}%

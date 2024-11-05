@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  7 JUN 2024 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  2 NOV 2024 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -366,13 +366,19 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@expandcount=\count299
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/usr/share/texlive/texmf-dist/tex/latex/pgf-umlcd/pgf-umlcd.sty
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen263
+\pgfarrowlength=\dimen264
+\pgfarrowwidth=\dimen265
+\pgfarrowlinewidth=\dimen266
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf-umlcd/pgf-umlcd.sty
 Package: pgf-umlcd 2011/10/01 v0.3dev Some LaTeX macros for UML Class Diagrams.
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen263
+\arrowsize=\dimen267
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
@@ -439,16 +445,16 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \psLoopIndex=\count315
 
 `PSTricks' v3.13  <2022/01/09> (tvz,hv)
-\pst@dima=\dimen264
-\pst@dimb=\dimen265
-\pst@dimc=\dimen266
-\pst@dimd=\dimen267
-\pst@dimg=\dimen268
-\pst@dimh=\dimen269
-\pst@dimm=\dimen270
-\pst@dimn=\dimen271
-\pst@dimo=\dimen272
-\pst@dimp=\dimen273
+\pst@dima=\dimen268
+\pst@dimb=\dimen269
+\pst@dimc=\dimen270
+\pst@dimd=\dimen271
+\pst@dimg=\dimen272
+\pst@dimh=\dimen273
+\pst@dimm=\dimen274
+\pst@dimn=\dimen275
+\pst@dimo=\dimen276
+\pst@dimp=\dimen277
 \pst@hbox=\box89
 \pst@ibox=\box90
 \pst@boxg=\box91
@@ -466,29 +472,29 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \pst@toks=\toks44
 --- We are running latex or xelatex ---
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con) (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-color.tex)
-\psunit=\dimen274
-\psxunit=\dimen275
-\psyunit=\dimen276
+\psunit=\dimen278
+\psxunit=\dimen279
+\psyunit=\dimen280
 \pst@C@@rType=\count327
-\pslinewidth=\dimen277
-\psk@startLW=\dimen278
-\psk@endLW=\dimen279
+\pslinewidth=\dimen281
+\psk@startLW=\dimen282
+\psk@endLW=\dimen283
  (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-arrows.tex
-\pshooklength=\dimen280
-\pshookwidth=\dimen281
+\pshooklength=\dimen284
+\pshookwidth=\dimen285
 )
 \pst@customdefs=\toks45
  (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-dots.tex)
-\pslinearc=\dimen282
-\pst@symbolStep=\dimen283
-\pst@symbolWidth=\dimen284
-\pst@symbolLinewidth=\dimen285
+\pslinearc=\dimen286
+\pst@symbolStep=\dimen287
+\pst@symbolWidth=\dimen288
+\pst@symbolLinewidth=\dimen289
 \everypsbox=\toks46
-\psframesep=\dimen286
-\pslabelsep=\dimen287
-\sh@wgridXunit=\dimen288
-\sh@wgridYunit=\dimen289
-\pst@shift=\dimen290
+\psframesep=\dimen290
+\pslabelsep=\dimen291
+\sh@wgridXunit=\dimen292
+\sh@wgridYunit=\dimen293
+\pst@shift=\dimen294
 \ps@imagectr=\count328
  (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con))
 File: pstricks.tex 2022/01/09 v3.13 `PSTricks' (tvz,hv)
@@ -504,14 +510,14 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen291
-\pgfdecoratedremainingdistance=\dimen292
-\pgfdecoratedinputsegmentcompleteddistance=\dimen293
-\pgfdecoratedinputsegmentremainingdistance=\dimen294
-\pgf@decorate@distancetomove=\dimen295
+\pgfdecoratedcompleteddistance=\dimen295
+\pgfdecoratedremainingdistance=\dimen296
+\pgfdecoratedinputsegmentcompleteddistance=\dimen297
+\pgfdecoratedinputsegmentremainingdistance=\dimen298
+\pgf@decorate@distancetomove=\dimen299
 \pgf@decorate@repeatstate=\count329
-\pgfdecorationsegmentamplitude=\dimen296
-\pgfdecorationsegmentlength=\dimen297
+\pgfdecorationsegmentamplitude=\dimen300
+\pgfdecorationsegmentlength=\dimen301
 )
 \tikz@lib@dec@box=\box92
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
@@ -540,12 +546,12 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip64
 \algomargin=\skip65
 \skipalgocfslide=\skip66
-\algowidth=\dimen298
-\inoutsize=\dimen299
-\inoutindent=\dimen300
-\interspacetitleruled=\dimen301
-\interspacealgoruled=\dimen302
-\interspacetitleboxruled=\dimen303
+\algowidth=\dimen302
+\inoutsize=\dimen303
+\inoutindent=\dimen304
+\interspacetitleruled=\dimen305
+\interspacealgoruled=\dimen306
+\interspacetitleboxruled=\dimen307
 \algocf@ruledwidth=\skip67
 \algocf@inoutbox=\box93
 \algocf@inputbox=\box94
@@ -573,21 +579,21 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \c@tracingmulticols=\count335
 \mult@box=\box101
-\multicol@leftmargin=\dimen304
+\multicol@leftmargin=\dimen308
 \c@unbalance=\count336
 \c@collectmore=\count337
 \doublecol@number=\count338
 \multicoltolerance=\count339
 \multicolpretolerance=\count340
-\full@width=\dimen305
-\page@free=\dimen306
-\premulticols=\dimen307
-\postmulticols=\dimen308
+\full@width=\dimen309
+\page@free=\dimen310
+\premulticols=\dimen311
+\postmulticols=\dimen312
 \multicolsep=\skip77
 \multicolbaselineskip=\skip78
 \partial@page=\box102
 \last@line=\box103
-\maxbalancingoverflow=\dimen309
+\maxbalancingoverflow=\dimen313
 \mult@rightbox=\box104
 \mult@grightbox=\box105
 \mult@firstbox=\box106
@@ -631,9 +637,9 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \c@minrows=\count341
 \c@columnbadness=\count342
 \c@finalcolumnbadness=\count343
-\last@try=\dimen310
-\multicolovershoot=\dimen311
-\multicolundershoot=\dimen312
+\last@try=\dimen314
+\multicolovershoot=\dimen315
+\multicolundershoot=\dimen316
 \mult@nat@firstbox=\box144
 \colbreak@box=\box145
 \mc@col@check@num=\count344
@@ -642,14 +648,14 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \lst@gtempboxa=\box146
 \lst@token=\toks47
 \lst@length=\count346
-\lst@currlwidth=\dimen313
+\lst@currlwidth=\dimen317
 \lst@column=\count347
 \lst@pos=\count348
-\lst@lostspace=\dimen314
-\lst@width=\dimen315
+\lst@lostspace=\dimen318
+\lst@width=\dimen319
 \lst@newlines=\count349
 \lst@lineno=\count350
-\lst@maxwidth=\dimen316
+\lst@maxwidth=\dimen320
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count351
@@ -673,7 +679,7 @@ File: latin1.def 2021/02/14 v1.3d Input encoding file
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count353
-\U@D=\dimen317
+\U@D=\dimen321
 \l@unhyphenated=\language87
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
@@ -728,7 +734,7 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip79
 \multirow@cntb=\count387
 \multirow@dima=\skip80
-\bigstrutjot=\dimen318
+\bigstrutjot=\dimen322
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -758,7 +764,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen319
+\@linkdim=\dimen323
 \Hy@linkcounter=\count388
 \Hy@pagecounter=\count389
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -791,15 +797,15 @@ Package hyperref Info: Bookmarks ON on input line 4445.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen320
+\XeTeXLinkMargin=\dimen324
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count392
-\Field@Width=\dimen321
-\Fld@charsize=\dimen322
+\Field@Width=\dimen325
+\Fld@charsize=\dimen326
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -836,9 +842,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip81
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen323
+\col@sep=\dimen327
 \ar@mcellbox=\box148
-\extrarowheight=\dimen324
+\extrarowheight=\dimen328
 \NC@list=\toks52
 \extratabsurround=\skip82
 \backup@length=\skip83
@@ -851,14 +857,14 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@cnth=\count398
 \Gm@cntv=\count399
 \c@Gm@tempcnt=\count400
-\Gm@bindingoffset=\dimen325
-\Gm@wd@mp=\dimen326
-\Gm@odd@mp=\dimen327
-\Gm@even@mp=\dimen328
-\Gm@layoutwidth=\dimen329
-\Gm@layoutheight=\dimen330
-\Gm@layouthoffset=\dimen331
-\Gm@layoutvoffset=\dimen332
+\Gm@bindingoffset=\dimen329
+\Gm@wd@mp=\dimen330
+\Gm@odd@mp=\dimen331
+\Gm@even@mp=\dimen332
+\Gm@layoutwidth=\dimen333
+\Gm@layoutheight=\dimen334
+\Gm@layouthoffset=\dimen335
+\Gm@layoutvoffset=\dimen336
 \Gm@dimlist=\toks53
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
@@ -953,13 +959,13 @@ LaTeX Font Info:    ... okay on input line 9.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count408
-\scratchdimen=\dimen333
+\scratchdimen=\dimen337
 \scratchbox=\box152
 \nofMPsegments=\count409
 \nofMParguments=\count410
 \everyMPshowfont=\toks55
 \MPscratchCnt=\count411
-\MPscratchDim=\dimen334
+\MPscratchDim=\dimen338
 \MPnumerator=\count412
 \makeMPintoPDFobject=\count413
 \everyMPtoPDFconversion=\toks56
@@ -1033,7 +1039,7 @@ LaTeX Info: Redefining \nameref on input line 9.
 \openout2 = `titulo.aux'.
 
 (./titulo.tex
-<images/Logo.png, id=99, 20.23087pt x 20.23087pt>
+<images/Logo.png, id=179, 20.23087pt x 20.23087pt>
 File: images/Logo.png Graphic file (type png)
 <use images/Logo.png>
 Package pdftex.def Info: images/Logo.png  used on input line 10.
@@ -1115,26 +1121,29 @@ LaTeX Info: Redefining \% on input line 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 ...{\numberline {8}Relaciones}{14}{chapter.8}
+l.22 ...II\hspace {1em}Metodolog\'ias}{15}{part.2}
                                                   % [1
 
 
 
 
-])
+]
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+ [2])
 \tf@toc=\write5
 \openout5 = `Manual.toc'.
 
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- [2] (./Manual.lof
+ [3] (./Manual.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write6
 \openout6 = `Manual.lof'.
 
- [3
+ [4
 
 ]
 \openout2 = `resumen.aux'.
@@ -1143,20 +1152,21 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [4
+)) [5
 
 ]
 \openout2 = `intro.aux'.
 
 
 No file intro.tex.
-(./Develop/index.tex (./Develop//DataScience/index.tex [1
+[6
 
 
 
 
 
 
+] (./Develop/index.tex (./Develop//DataScience/index.tex [1
 
 ] (./Develop/DataScience/DataScience/DataScience.tex [2]
 Cap\'{\i }tulo 1.
@@ -1180,55 +1190,67 @@ Cap\'{\i }tulo 4.
 
 ]
 Cap\'{\i }tulo 5.
-) (./Develop/DataScience/BigData/BigData.tex [8
+[8
 
-]
+] [9] [10]) (./Develop/DataScience/BigData/BigData.tex [11]
 Cap\'{\i }tulo 6.
-[9
+[12
 
-])) (./Develop//Metodologia/Crispdm.tex [10] [11
+]) [13]) (./Develop//Metodologia/Crispdm.tex [14] [15
 
 ]
 Cap\'{\i }tulo 7.
-) (./Develop//DataBase/Sql.tex [12
+) (./Develop//DataBase/Sql.tex [16
 
-] [13
+] [17
 
 ]
 Cap\'{\i }tulo 8.
-[14
+[18
 
 ]
 Cap\'{\i }tulo 9.
-[15
+[19
 
-] [16]
+] [20]
 Overfull \hbox (30.37842pt too wide) in paragraph at lines 145--145
 []\T1/lmtt/m/n/10.95 Ejemplo 2: Seleccionamos los empleados que no pertenezcan al departamento general:[] 
  []
 
-[17]) (./Develop//AprendizajeAutomatico1/index.tex (./Develop/AprendizajeAutomatico1/unidad1.tex [18]))) (./Bibliography/bibliography.tex [19] [20]) [21
+[21]) (./Develop//AprendizajeAutomatico1/index.tex (./Develop/AprendizajeAutomatico1/unidad1.tex [22]))) (./Mathematics/index.tex [23] [24] [25
+
+] [26]
+Cap\'{\i }tulo 10.
+(./Mathematics/Combinatorics/Combinatorics.tex [27
+
+] [28] [29]) [30] [31
+
+] (./Mathematics//SeriesTemporales/index.tex
+Cap\'{\i }tulo 11.
+[32
+
+])) (./Bibliography/bibliography.tex [33]) [34
 
 ] (./Manual.aux (./titulo.aux)
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
  (./resumen.aux) (./intro.aux))
 Package rerunfilecheck Info: File `Manual.out' has not changed.
-(rerunfilecheck)             Checksum: BF38DD07058B29027DA23D5A03DC862A;4013.
+(rerunfilecheck)             Checksum: 3E8BDD03E1B7C682C4BB8BE7FD30AF54;7451.
  ) 
 Here is how much of TeX's memory you used:
- 32910 strings out of 478287
- 607515 string characters out of 5849289
- 913024 words of memory out of 5000000
- 50277 multiletter control sequences out of 15000+600000
+ 33387 strings out of 478287
+ 618700 string characters out of 5849289
+ 923812 words of memory out of 5000000
+ 50640 multiletter control sequences out of 15000+600000
  546956 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,8n,92p,665b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Manual.pdf (26 pages, 295606 bytes).
+ 89i,10n,92p,665b,756s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Manual.pdf (41 pages, 358451 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 321 compressed objects within 4 object streams
- 94 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 652 PDF objects out of 1000 (max. 8388607)
+ 568 compressed objects within 6 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

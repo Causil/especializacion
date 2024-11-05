@@ -4,3 +4,171 @@ extracci\'on, transformaci\'on y carga de datos (ETL). Automatizaci\'on de proce
 paralelo. Tiene conocimientos en programaci\'on con Python y bases solidas de ingenier\'ia de software, manejo de datos estructurados y no estructurados, c\'omputo, almacenamiento y bases de datos en la nube. 
 ETL con herramientas como SQL, Apache Spark, Airflow, Hadoop, AWS, Google Cloud, Azure, entre otros.
 
+\section{M\'odulo 1}
+
+\begin{enumerate}
+    \item Ask:
+    \item Prepare:
+    \item Procesos:
+    \item Analyze:
+    \item Share:
+    \item Act:
+\end{enumerate}
+
+
+\section{Problemas con datos}
+Cua\'ndo se preparan los datos para un an\'alisis, se pueden presentar problemas como:
+\begin{itemize}
+    \item No tenemos los datos que necesitamos.
+    \item Los datos que tenemos no son suficientes.
+    \item Duplicados
+    \item Valores faltantes
+    \item Valores at\'ipicos
+    \item Datos incorrectos
+    \item Datos inconsistentes
+    \item Datos desactualizados
+    \item Datos no estructurados
+    \item Datos no normalizados
+    \item Datos no limpios
+    \item Datos no estandarizados
+    \item Datos no validados
+    \item Datos no verificados
+    \item Datos no confiables
+    \item Datos no seguros
+    \item Datos no accesibles
+    \item Datos no escalables
+    \item Datos no flexibles
+    \item Datos no eficientes
+    \item Datos no eficaces
+\end{itemize}
+
+En muchos casos se suele usar lo que se conoce como datos indirectos en lugar de datos reales. En otros casos, puede no haber un sustituto razonable y la \'unica opci\'on 
+ser\'a recopilar m\'as datos.
+
+
+\subsection{Falta de datos}
+
+posibles soluciones: 
+
+\begin{enumerate}
+    \item Recopila datos en menor escala para realizar un an\'alisis preliminar y, luego, pide m\'as tiempo para completar el
+     an\'alisis despu\'es de haber recopilado m\'as informaci\'on.
+    \item Si no hay tiempo para recopilar informaci\'on, realizar el an\'alisis utilizando datos indirectos de otros conjuntos de datos. Est\'a es la soluci\'on m\'as com\'un.
+    
+\end{enumerate}
+
+
+\subsection{Muy pocos datos}
+
+Soluciones posibles:
+\begin{enumerate}
+    \item Realiza el an\'alisis utilizando datos indirectos junto con datos reales. 
+    \item Ajusta tu an\'alisis para alinearlo con los datos que ya tienes.
+\end{enumerate}
+
+
+\subsection{Datos incorrectos, incluidos los datos con errores}
+
+Soluciones posibles:
+\begin{enumerate}
+    \item Si tienes datos incorrectos porque los requerimientoss no fueron bien interpretados, comunica los requerimientos nuevamente.
+    \begin{example}
+        \begin{itemize}
+            \item Si necesitas datos sobre mujeres y votantes y recibiste datos sobre hombres votantes, vuelve a comunicar qu\'e datos necesitas.
+            \item Si los datos se recopilaron incorrectamente, recopila los datos nuevamente.
+            \item Si los datos se ingresaron incorrectamente, corrige los datos en la fuente.
+            \item Si los datos se procesaron incorrectamente, procesa los datos nuevamente.
+            \item Si los datos se analizaron incorrectamente, analiza los datos nuevamente.
+            \item Si los datos se presentaron incorrectamente, presenta los datos nuevamente.
+        \end{itemize}
+    \end{example}
+    \item Identifica los errores en los datos y, cuando sea posible, corr\'igelos en la fuente buscando el patr\'on de errores.
+        \begin{example}
+            \item Si tus datos se encuentran en una hoja de c\'alculo y hay una instrucci\'on condicional o datos booleanos que generan errores en los c\'alculos, modifica la instrucci\'on condicional en lugar de corregir 
+            los valores calculados.
+        \end{example}
+    \item Si no puedes corregir los errores en los datos t\'u mismo, puedes ignorarlos y seguir adelante con el an\'alisis en caso 
+          de que el tama\~no de tu muestra a\'un sea lo suficientemente grande como para poder ignorar esos datos y que eso no ocasione un sesgo sistem\'atico.
+          \begin{example}
+            \item Si tu conjunto de datos es una traducci\'on de otro idioma y alguna traducci\'on no tiene sentido, puedes ignorar los datos con traducciones err\'oneas y seguir adelante con el an\'alisis de los otros datos.
+          \end{example}
+    \item Nota: a veces los datos con errores pueden ser una se\~nal de advertencia sobre la falta de confiabilidad de los datos. Utiliza tu juicio.
+\end{enumerate}
+
+Diagrama de toma de decisiones para recordar c\'omo manejar los errores en los datos o la falta de datos:
+
+\begin{enumerate}
+    \item Data Errors:
+    % \begin{tikzpicture}[node distance=1.5cm,
+    %     every node/.style={fill=white, font=\sffamily}, align=left]
+    %   % Specification of nodes (position, etc.)
+    %   \node (start)             [activityStarts]              {?`Puedes corregir o pedir un conjunto de datos corregidos?};
+    %   \node (onCreateBlock)     [process, below of=start]          {Realiza el an\'alisis despu\'es de que los datos se hayan corregido};
+    %   \node (onStartBlock)      [process, below of=onCreateBlock]   {?`Tienes suficientes datos como para poder omitir los datos erroneos?};
+    %   \node (onResumeBlock)     [process, below of=onStartBlock]   {Realiza el an\'alisis sin los datos err\'oneos};
+    %   \node (activityRuns)      [activityRuns, below of=onResumeBlock] {?`Puedes recopilar m\'as datos?};
+    %   \node (onPauseBlock)      [process, below of=activityRuns, yshift=-1cm]
+    %                                                                 { Realiza el an\'alisis despu\'es de la recopilaci\'on de datos };
+    %   \node (onStopBlock)       [process, below of=onPauseBlock, yshift=-1cm]
+    %                                                                  {Modifica el objetivo comercial (de ser posible)};
+    %   \node (onDestroyBlock)    [process, below of=onStopBlock, yshift=-1cm] 
+    %                                                               {onDestroy()};
+    %   \node (onRestartBlock)    [process, right of=onStartBlock, xshift=4cm]
+    %                                                               {onRestart()};
+    %   \node (ActivityEnds)      [startstop, left of=activityRuns, xshift=-4cm]
+    %                                                         {Process is killed};
+    %   \node (ActivityDestroyed) [startstop, below of=onDestroyBlock]
+    %                                                     {Activity is shut down};
+    %   % Specification of lines between nodes specified above
+    %   % with aditional nodes for description 
+    %   \draw[->]             (start) -- (onCreateBlock);
+    %   \draw[->]     (onCreateBlock) -- (onStartBlock);
+    %   \draw[->]      (onStartBlock) -- (onResumeBlock);
+    %   \draw[->]     (onResumeBlock) -- (activityRuns);
+    %   \draw[->]      (activityRuns) -- node[text width=4cm]
+    %                                    {Another activity comes in
+    %                                     front of the activity} (onPauseBlock);
+    %   \draw[->]      (onPauseBlock) -- node {The activity is no longer visible}
+    %                                    (onStopBlock);
+    %   \draw[->]       (onStopBlock) -- node {The activity is shut down by
+    %                                    user or system} (onDestroyBlock);
+    %   \draw[->]    (onRestartBlock) -- (onStartBlock);
+    %   \draw[->]       (onStopBlock) -| node[yshift=1.25cm, text width=3cm]
+    %                                    {The activity comes to the foreground}
+    %                                    (onRestartBlock);
+    %   \draw[->]    (onDestroyBlock) -- (ActivityDestroyed);
+    %   \draw[->]      (onPauseBlock) -| node(priorityXMemory)
+    %                                    {higher priority $\rightarrow$ more memory}
+    %                                    (ActivityEnds);
+    %   \draw           (onStopBlock) -| (priorityXMemory);
+    %   \draw[->]     (ActivityEnds)  |- node [yshift=-2cm, text width=3.1cm]
+    %                                     {User navigates back to the activity}
+    %                                     (onCreateBlock);
+    %   \draw[->] (onPauseBlock.east) -- ++(2.6,0) -- ++(0,2) -- ++(0,2) --                
+    %      node[xshift=1.2cm,yshift=-1.5cm, text width=2.5cm]
+    %      {The activity comes to the foreground}(onResumeBlock.east);
+    %   \end{tikzpicture}
+    
+\end{enumerate}
+
+\section{El tama\~no de la muestra}
+
+La poblaci\'on 
+
+Tama\~no de la muestra(Sample size)
+Usar una parte de una poblaci\'on el objetivo es obtener suficiente informaci\'on de un grupo peque\~no de personas para hacer inferencias sobre toda la poblaci\'on.
+dentro de una poblaci\'on para formular predicciones o conclusiones sobre la poblaci\'on total. La muestra asegura el grado respecto 
+del cual puedes estar confiado en que tus conclusiones representan con presici\'on a la poblaci\'on.
+
+Nota: Cuando utilizas \'unicamente una muestra peque\~na de una poblaci\'on, puede llevar a la incertidumbre en tus conclusiones. No puedes estar el 100\% seguro 
+de que tus estad\'isticas son una representaci\'on precisa y completa de la poblaci\'on. Esto lleva a un sesgo del muestreo, ocurre cuando la muestra no es representativa de la 
+poblaci\'on en su conjunto. Esto significa que algunos miembros de la poblaci\'on est\'an siendo sobre o subrepresentados. 
+
+Existen m\'etodos para solucionar el sesgo del muestreo.
+
+\begin{enumerate}
+    \item Muestreo aleatorio
+\end{enumerate}
+
+C\'omo an\'alista de datos es bueno saber que los datos que se van a analizar son representativos de una poblaci\'on y sirven para el objetivo.
+

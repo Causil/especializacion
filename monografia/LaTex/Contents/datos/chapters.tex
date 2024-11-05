@@ -1,0 +1,30 @@
+\section{Datos originales}
+Se dispone de dos fuentes de datos.
+Fuente de datos 1: se cuenta con la informaci\'on para 1404 d\'ias 
+del consumo energ\'ia activa y reactiva para el periodo comprendido 
+entre febrero de 2020 y mayo de 2024. Estos datos son proporcionados 
+directamente por la empresa prestadora de servicios de energ\'ia el\'ectrica y
+son un instrumento para el control del pago de la facturaci\'on mensual. 
+Se cuenta con un archivo en excel por a\~no. Cada archivo contiene 
+cinco variables de las cuales se tiene informaci\'on para cada hora, 
+as\'i:
+
+\begin{enumerate}
+    \item Energ\'ia Activa Consumo (kWh).
+    \item Energ\'ia Activa Generaci\'on (kWh).
+    \item Energ\'ia Reactiva Inductiva (kVarh).
+    \item Energ\'ia Reactiva Capacitiva (kVarh).
+    \item Fecha.
+\end{enumerate}
+
+
+Fuente de datos 2: Mediciones de los sensores de equipos de la empresa productora de 
+l\'acteos. Los datos de los sensores est\'an alojados en DynamoDB con una actualizaci\'on 
+segundo a segundo. Los sensores toman los datos de ciertas m\'etricas asociadas 
+al estado de los equipos para el seguimiento en la producci\'on, los cuales son almacenados 
+en la nube a trav\'es del servicio de AWS. Actualmente el acceso a las bases de datos se 
+encuentra limitado por parte de la oficina de TI. Una vez se restablezca el servicio, se 
+proceder\'a a realizar el an\'alisis correspondiente de los datos disponibles. Se est\'a a 
+la espera de la entrega del diccionario de datos generados por los sensores por parte del 
+equipo de TI. Las variables que contempla esta fuente de datos se relacionan en la tabla 
+1 y su an\'alisis se realizar\'a para una entrega posterior.

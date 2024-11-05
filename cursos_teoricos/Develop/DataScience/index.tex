@@ -3,3 +3,62 @@
 \import{Develop/DataScience/DataScience/}{DataScience.tex}
 \import{Develop/DataScience/DataEnginer/}{DataEnginer.tex}
 \import{Develop/DataScience/BigData/}{BigData.tex}
+
+
+
+
+\section{Roles}
+
+?`Qui\'en define que variables que variables van a quedar en una fuente de datos que se este 
+extrayendo?
+
+La desici\'on involucra a varios roles y depende del contexto del proyecto y objetivos del an\'alisis. 
+A continuaci\'on: 
+
+\begin{description}
+    \item[Data Engineer: ]
+        \begin{itemize}
+            \item[Rol: ]Son responsables de la contrucci\'on  y mantenimiento de los pipelines de datos. Pueden decidir qu\'e varaibles extraer en funci\'on de la viabilidad t\'ecnica y calidad de los datos. 
+            \item[Criterio de selecci\'on: ] Pueden excluir variables con baja calidad de datos (por ejemplo muchas ausencias o valores inconsistentes) o datos que no sean escalables para el almacenamiento y procesamiento.
+        \end{itemize} 
+    \item[Data Analyst: ]
+        \begin{itemize}
+              \item[Rol: ]Son los responsables de examinar y comprender los datos para extraer informaci\'on \'util. A menudo, 
+              son quienes deciden qu\'e variables son relevantes para el an\'alisis.
+              \item[Criterio de selecci\'on: ] Se basan en la relevancia de las variables para las preguntas de negocio o hip\'otesis que se desean validar. 
+              Pueden realizar un an\'alisis exploratorio para identificar cu\'ales son los datos m\'as significativos.
+        \end{itemize}
+    \item[Data Scientist: ]
+        \begin{itemize}
+            \item[Rol: ] Dise\~nan modelos predictivos o de aprendizaje autom\'atico y definen qu\'e variables se usar\'an como caracter\'isticas para estos modelos.
+            \item[Criterio de selecci\'on: ] Aplican t\'ecnicas de selecci\'on de caracter\'isticas (feature selection) para identificar las variables m\'as importantes o realizar transformaciones para crear nuevas 
+            variables a partir de las existentes.
+        \end{itemize}
+    \item[Usuario de Negocio(Stakeholders): ]
+        \begin{itemize}
+            \item[Rol: ] Los usuarios de negocio, como gerentes o l\'ideres de proyectos, son quienes tienen una visi\'on clara de los objetivos del negocio y las decisiones que necesitan respaldarse con datos.
+            \item[Criterio de selecci\'on: ] Pueden definir qu\'e datos son necesarios para tomar decisiones estrat\'egicas o monitorear m\'etricas clave de desemple\~no (KPIs).
+        \end{itemize}
+    \item[Arquitectos de Datos: ]
+        \begin{itemize}
+            \item[Rol: ] Los arquitectos de datos son responsables del dise\~no de la infraestructura de datos. Pueden sugerir qu\'e variables se deben extraer con base en la arquitectura existente y las limitaciones de almacenamiento o procesamiento.
+            \item[Criterio de selecci\'on: ] Consideran la eficiencia de almacenamiento y procesamiento, as\'i como la integraci\'on con otras fuentes de datos.
+        \end{itemize}
+    \item[Gobernanza de Datos: ]
+        \begin{itemize}
+            \item[Rol: ] Los equipos encargados de la gobernanza de datos aseguran que los datos utilizados cumplan con normativas y pol\'iticas de la organizaci\'on.
+            \item[Criterio de selecci\'on: ] Pueden excluir variables que contengan datos sensibles o que no cumplan con regulaciones de privacidad, como normativas GDPR o CCPA.
+        \end{itemize}
+\end{description}    
+
+Proceso de Decisi\'on T\'ipico
+\begin{enumerate}
+    \item Definir los Objetivos del Proyecto: Se establecen los objetivos del an\'alisis o del proyecto de datos.
+    \item Selecci\'on Inicial de Variables: Basado en los requisitos de negocio y las hip\'otesis iniciales, se realiza una selecci\'on preliminar de variables.
+    \item Evaluaci\'on Técnica y de Calidad: Los ingenieros y analistas de datos evalúan la calidad y viabilidad de extraer y utilizar las variables seleccionadas.
+    \item Iteraci\'on y Refinamiento: Puede realizarse un proceso iterativo para ajustar la selecci\'on de variables con base en el an\'alisis exploratorio de datos, la retroalimentaci\'on de los usuarios de negocio o los resultados de modelos preliminares.
+    \item Aprobaci\'on Final: Los stakeholders y los responsables de la gobernanza de datos aprueban la selecci\'on final.
+\end{enumerate}
+La selecci\'on de variables es un proceso colaborativo que involucra a m\'ultiples roles y se adapta a los objetivos espec\'ificos del proyecto. ¿`Tienes un contexto particular en mente o alg\'un proyecto del cual te gustar\'ia discutir m\'as a fondo?
+
+De \cite{OpenAI}.

@@ -22,3 +22,48 @@ de energ\'ia global se conoce, no es posible identificar la totalidad de las fue
 La energ\'ia reactiva puede ser generada por m\'ultiples fuentes (motores, equipos el\'ectricos, instalaciones, etc.) y puede variar seg\'un el estado de la maquinaria, la tecnolog\'ia de las ma\'aquinas, 
 el mantenimiento y otras variables no identificadas, por lo cual no es posible discriminar el aporte de cada fuente al sobre costo establecido por el prestador de servicios de energ\'ia, lo cual dificulta la toma de decisiones 
 para optimizar su uso. 
+
+La Comisi\'on Reguladora de Energ\'ia y Gas CREG, mediante Resoluciones 15 de 2018 (CREG, 2018), 199 de 2019 (CREG, 2020) ha emitido los lineamientos con los cuales se determina la variable M 
+que establece el nivel en el que se encuentra una empresa, de acuerdo con la cantidad energ\i'a reactiva generada en un determinado periodo de tiempo.
+Esta variable es la que utilizan los prestadores de servicios de energ\'ia para establecer las penalizaciones aplicadas por sobrepasar los l\'imites 
+establecidos en la normativa. 
+En el a\~no 2024 la Empresa se encuentra en el nivel 6 de 12 niveles posibles y ha venido en aumento, donde el nivel 12 es el de mayor sanci\'on. 
+Lo anterior se ve reflejado en un aumento en los pagos realizados a EPM asociados a la penalizaci\'on por exceso de generaci\'on de energ\'ia reactiva.
+La situaci\'on se vuelve en un tema cr\'itico para la gerencia de la Planta, al ver que los costos de producci\'on aumentan por la generaci\'on de energ\'ia reactiva, y no se tiene establecido un plan para controlarla.
+
+
+\section{Aproximaci\'on desde la an\'itica}
+Se aplicar\'an modelos estad\'isticos y de machine learning para pronosticar la generaci\'on de energ\'ia 
+reactiva que afecta el consumo energ\'etico, pero no agrega valor a la empresa. 
+Se espera que, con los resultados del modelo, el equipo t\'ecnico pueda tomar decisiones 
+para controlar la energ\'ia reactiva generada que lleve a la reducci\'on del valor de la 
+facturaci\'on mensual.
+
+
+\section{Origen de los datos}
+Se cuenta con informaci\'on de la energ\'ia activa y reactiva por hora para el periodo comprendido 
+entre febrero de 2020 y mayo de 2024. Estos datos son proporcionados directamente por la 
+empresa prestadora de servicios de energ\'ia el\'ectrica y son un instrumento para el control del pago de la facturaci\'on 
+mensual. 
+
+Adicionalmente, se tienen mediciones de los sensores de los equipos, los cuales toman 
+los datos por segundo de valores asociados al estado de los equipos para el seguimiento 
+en la producci\'on desde el a\~no 2023, los cuales son almacenados en la nube a trav\'es 
+del servicio de AWS.
+
+\section{Me\'tricas de desempe\~no}
+Se considerar\'an las siguientes m\'etricas de desempe\~no del modelo: 
+
+\begin{enumerate}
+    \item Error absoluto medio (MAE): Mide la diferencia promedio absoluta entre los valores pronosticados y los valores reales. Un MAE bajo indica mayor precisi\'on.
+    \item Error cuadrático medio (RMSE): Similar al MAE, pero considera los errores al cuadrado, penalizando m\'as los errores grandes. Un RMSE bajo indica mayor precisi\'on.
+    \item Error porcentual absoluto medio (MAPE): Expresa el error en t\'erminos porcentuales, siendo \'util para comparar series de tiempo con diferentes escalas. Un MAPE bajo indica mayor precisi\'on.
+\end{enumerate}
+
+C\'omo m\'etrica del negocio se considera kVarh.
+\begin{itemize}
+    \item Precisi\'on: Porcentaje de aciertos del modelo en la predicci\'on de la energ\'ia reactiva.
+    \item Recall: Porcentaje de aciertos del modelo en la predicci\'on de la energ\'ia reactiva.
+    \item F1-Score: Media arm\'onica de la precisi\'on y el recall.
+    \item Valor de la facturaci\'on mensual: Valor de la facturaci\'on mensual de la energ\'ia reactiva.
+\end{itemize}

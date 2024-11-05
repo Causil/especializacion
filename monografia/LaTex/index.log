@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  13 OCT 2024 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  29 OCT 2024 20:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1043,7 +1043,7 @@ LaTeX Info: Redefining \nameref on input line 9.
 \openout2 = `titulo.aux'.
 
 (./titulo.tex
-<images/Logo.png, id=26, 313.17pt x 150.5625pt>
+<images/Logo.png, id=51, 313.17pt x 150.5625pt>
 File: images/Logo.png Graphic file (type png)
 <use images/Logo.png>
 Package pdftex.def Info: images/Logo.png  used on input line 7.
@@ -1088,12 +1088,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-Overfull \hbox (50.7589pt too wide) in paragraph at lines 13--13
- [][] 
- []
-
-) [1
+)) [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -1154,42 +1149,43 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ] (./Contents/main.tex
 Cap\'{\i }tulo 1.
-(./Contents//description/chapters.tex) [1
+(./Contents//description/chapters.tex [1
 
-]
+] [2]) [3]
 Cap\'{\i }tulo 2.
-(./Contents//Objetivos/chapters.tex) [2
+(./Contents//Objetivos/chapters.tex) [4
 
 ]
 Cap\'{\i }tulo 3.
-(./Contents//datos/chapters.tex)) (./Bibliography/bibliography.tex [3
+(./Contents//datos/chapters.tex)) (./Bibliography/bibliography.tex [5
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [4
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+\T1/lmr/m/n/10.95 celsia/conoce-todo-lo-que-debes-saber-sobre-energia-reactiva-por-que-se-refleja-en-tu-
+ []
+
+) [6
 
 ] (./index.aux (./titulo.aux)
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
  (./resumen.aux))
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 2C79F5264AF3F9A36EEA37C4153D6D2E;586.
+(rerunfilecheck)             Checksum: E6C811422718CF748D3D405ED6C874ED;1534.
  ) 
 Here is how much of TeX's memory you used:
- 32901 strings out of 478287
- 605490 string characters out of 5849289
- 913426 words of memory out of 5000000
- 50386 multiletter control sequences out of 15000+600000
- 521897 words of font info for 68 fonts, out of 8000000 for 9000
+ 32876 strings out of 478287
+ 604912 string characters out of 5849289
+ 914279 words of memory out of 5000000
+ 50353 multiletter control sequences out of 15000+600000
+ 521578 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,8n,92p,521b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on index.pdf (9 pages, 207301 bytes).
+ 89i,8n,92p,521b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb>
+Output written on index.pdf (11 pages, 189908 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
