@@ -1,0 +1,38 @@
+
+
+% \begin{figure}[h!]
+%     \centering
+%     \resizebox{\linewidth}{!}{ % Ajusta la tabla al ancho del documento
+%             \begin{tikzpicture}
+%                 % Cuadrícula de referencia
+%                 \draw[very thin,color=gray] (-0.5,-1) grid (6.5,10);
+%                 % Ejes x e y
+%                 \draw[->] (-0.5,0) -- (7,0) node[right] {$x$};
+%                 \draw[->] (0,-1) -- (0,6) node[above] {$y$};
+%                 % Conjunto de puntos con fechas en el eje x
+%                 \draw[color=blue, thick] plot coordinates {(1,2) (2,3.5) (3,4) (4,3) (5,15)};
+%                 % Etiquetas para las fechas en el eje x
+%                 \node[below] at (1,0) {2024-01-01};
+%                 \node[below] at (2,0) {2024-02-01};
+%                 \node[below] at (3,0) {2024-03-01};
+%                 \node[below] at (4,0) {2024-04-01};
+%                 \node[below] at (5,0) {2024-05-01};
+%                 % Etiqueta de la curva
+%                 \node[above] at (5,5) {Curva de ejemplo};
+%             \end{tikzpicture}
+%     }
+%         \caption{Gr\'afico}
+%         \label{fig:ejemplo}
+% \end{figure}
+
+     \begin{tikzpicture}[domain=0:4]
+         \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
+      
+         \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
+         \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
+      
+         \draw[color=red]    plot (\x,\x)             node[right] {$f(x) =x$};
+         % \x r means to convert '\x' from degrees to _r_adians:
+         \draw[color=blue]   plot (\x,{sin(\x r)})    node[right] {$f(x) = \sin x$};
+         \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+       \end{tikzpicture}

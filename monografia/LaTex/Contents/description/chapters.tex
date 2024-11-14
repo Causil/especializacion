@@ -41,8 +41,8 @@ facturaci\'on mensual.
 
 
 \section{Origen de los datos}
-Se cuenta con informaci\'on de la energ\'ia activa y reactiva por hora para el periodo comprendido 
-entre febrero de 2020 y mayo de 2024. Estos datos son proporcionados directamente por la 
+Para este proyecto se cuenta con informaci\'on de la energ\'ia activa y reactiva por hora para el periodo comprendido 
+entre febrero de 2020 y septiembre de 2024. Estos datos son proporcionados directamente por la 
 empresa prestadora de servicios de energ\'ia el\'ectrica y son un instrumento para el control del pago de la facturaci\'on 
 mensual. 
 
@@ -51,19 +51,39 @@ los datos por segundo de valores asociados al estado de los equipos para el segu
 en la producci\'on desde el a\~no 2023, los cuales son almacenados en la nube a trav\'es 
 del servicio de AWS.
 
-\section{Me\'tricas de desempe\~no}
-Se considerar\'an las siguientes m\'etricas de desempe\~no del modelo: 
+\section{M\'etricas de desempe\~no}
+
+Para evaluar nuestros modelos utilizaremos m\'etricas de desempe\~no que nos permitan medir la precisi\'on de los modelos.
+Se considerar\'an las siguientes m\'etricas de desempe\~no del modelo utilizando la librer\'ia Scikit-learn \cite{ScikitMetrics}:  
 
 \begin{enumerate}
-    \item Error absoluto medio (MAE): Mide la diferencia promedio absoluta entre los valores pronosticados y los valores reales. Un MAE bajo indica mayor precisi\'on.
-    \item Error cuadrático medio (RMSE): Similar al MAE, pero considera los errores al cuadrado, penalizando m\'as los errores grandes. Un RMSE bajo indica mayor precisi\'on.
-    \item Error porcentual absoluto medio (MAPE): Expresa el error en t\'erminos porcentuales, siendo \'util para comparar series de tiempo con diferentes escalas. Un MAPE bajo indica mayor precisi\'on.
+    \item Error absoluto medio (MAE): Nos arroja la diferencia promedio absoluta entre los valores 
+    pronosticados y los valores reales. Es decir que tan distante est\'an los valores pronosticados 
+    de los valores reales.
+    
+     \begin{equation}
+        MAE(y,\hat{y}) = \frac{1}{n} \sum_{i=1}^{n-1} |y_i - \hat{y}_i|,
+    \end{equation}
+    \item Error cuadr\'atico medio (RMSE): Similar al MAE, pero considera los errores al cuadrado, penalizando m\'as los errores grandes. Un RMSE bajo indica mayor precisi\'on.
+        \begin{equation}
+            RMSE(y,\hat{y}) = \sqrt{\frac{1}{n} \sum_{i=1}^{n-1} (y_i - \hat{y}_i)^2},
+    \end{equation}
+    \item Error porcentual absoluto medio (MAPE): Expresa el error en t\'erminos porcentuales, siendo \'util para comparar series de tiempo con diferentes escalas.
+    \begin{equation}
+        MAPE(y,\hat{y}) = \frac{1}{n} \sum_{i=1}^{n-1} \left| \frac{y_i - \hat{y}_i}{y_i} \right|.
+    \end{equation}
+
 \end{enumerate}
 
-C\'omo m\'etrica del negocio se considera kVarh.
-\begin{itemize}
-    \item Precisi\'on: Porcentaje de aciertos del modelo en la predicci\'on de la energ\'ia reactiva.
-    \item Recall: Porcentaje de aciertos del modelo en la predicci\'on de la energ\'ia reactiva.
-    \item F1-Score: Media arm\'onica de la precisi\'on y el recall.
-    \item Valor de la facturaci\'on mensual: Valor de la facturaci\'on mensual de la energ\'ia reactiva.
-\end{itemize}
+
+
+\section{Modelos}
+
+\subsection{ARIMA}
+
+El modelo ARIMA (Autoregressive Integrated Moving Average) es un modelo estad\'istico que se utiliza para analizar y predecir series temporales. 
+Se utilizar\'a ARIMA para pronosticar la generaci\'on de energ\'ia reactiva en la planta de producci\'on.
+
+\subsection{RNN}
+
+\subsection{LSTM}

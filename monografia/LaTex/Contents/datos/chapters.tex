@@ -1,30 +1,44 @@
 \section{Datos originales}
-Se dispone de dos fuentes de datos.
-Fuente de datos 1: se cuenta con la informaci\'on para 1404 d\'ias 
-del consumo energ\'ia activa y reactiva para el periodo comprendido 
-entre febrero de 2020 y mayo de 2024. Estos datos son proporcionados 
-directamente por la empresa prestadora de servicios de energ\'ia el\'ectrica y
-son un instrumento para el control del pago de la facturaci\'on mensual. 
-Se cuenta con un archivo en excel por a\~no. Cada archivo contiene 
-cinco variables de las cuales se tiene informaci\'on para cada hora, 
-as\'i:
-
-\begin{enumerate}
+El conjunto de datos encrudo son archivos en formato xlsx, desde el 2020 hasta el 2024, 
+donde se tiene el reporte por hora de: 
+\begin{itemize}
     \item Energ\'ia Activa Consumo (kWh).
     \item Energ\'ia Activa Generaci\'on (kWh).
     \item Energ\'ia Reactiva Inductiva (kVarh).
     \item Energ\'ia Reactiva Capacitiva (kVarh).
     \item Fecha.
-\end{enumerate}
+\end{itemize}
 
+Se presentan unos datos at\'ipicos enero de 2021 a junio 2021, esplicados por paros, apagones en la empresa.
+Debido a que est\'as anomalias son provocadas por sucesos ajenos a un error en la c\'odificaci\'on del dato, no se procede a 
+eliminarlos, ya que son datos reales y pueden afectar el modelo.
 
-Fuente de datos 2: Mediciones de los sensores de equipos de la empresa productora de 
-l\'acteos. Los datos de los sensores est\'an alojados en DynamoDB con una actualizaci\'on 
-segundo a segundo. Los sensores toman los datos de ciertas m\'etricas asociadas 
-al estado de los equipos para el seguimiento en la producci\'on, los cuales son almacenados 
-en la nube a trav\'es del servicio de AWS. Actualmente el acceso a las bases de datos se 
-encuentra limitado por parte de la oficina de TI. Una vez se restablezca el servicio, se 
-proceder\'a a realizar el an\'alisis correspondiente de los datos disponibles. Se est\'a a 
-la espera de la entrega del diccionario de datos generados por los sensores por parte del 
-equipo de TI. Las variables que contempla esta fuente de datos se relacionan en la tabla 
-1 y su an\'alisis se realizar\'a para una entrega posterior.
+Al conjunto de datos se hace una limpieza y agrupaci\'on en un solo archivo permitiendonos tener un conjunto de datos con una ventana de tiempo de 
+febrero de 2020 a septiembre de 2024. Con la siguente estructura de datos:
+\begin{table}[h!]
+    \centering
+    \caption{Muestra de datos de energ\'ia }
+    \hspace{0.01cm}
+    \resizebox{\linewidth}{!}{ % Ajusta la tabla al ancho del documento
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         \textbf{Fecha} &     \textbf{Activa Consumo} & \textbf{Activa Generaci\'on} & \textbf{Reactiva Capacitiva} & \textbf{Reactiva Inductiva}  \\ \hline
+         2020-02-16     & 4948.0                      & 0.0                          & 0.0                          & 1382.0                             \\ \hline
+         2020-02-17     & 14400.0                     & 0.0                          & 0.0                          & 7072.0                             \\ \hline
+         2020-02-18     & 14896.0                     & 0.0                          & 0.0                          & 7640.0                             \\ \hline
+         2020-02-19     & 14976.0                     & 0.0                          & 0.0                          & 7800.0                             \\ \hline
+         2020-02-20     & 16104.0                     & 0.0                          & 0.0                          & 8376.0                             \\ \hline
+        \end{tabular}
+    }
+    
+    \label{tabla:tabla_energia}
+    \end{table}
+    En la tabla podemos \cite{tabla_energia} 
+    En la siguiente gr\'afica tenemos los datos originales gr\'aficados    
+      \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.8\textwidth]{/home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/monografia/LaTex/images/newplot.png} % Cambia "ruta/de/la/imagen.jpg" por el nombre de tu archivo
+        \caption{Energ\'ia reactiva}
+        \label{fig:energia_reactiva_original}
+    \end{figure}
+%\input{/home/javier/Documentos/Javier/MiPregradoDeVida/Postgrado/especializacion/monografia/LaTex/Contents/datos/graficos/grafico}
